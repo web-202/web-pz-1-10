@@ -1,0 +1,7 @@
+@mixin size-small__header__search-form {
+  @media screen and (max-width: 385px) {
+    .header__search-form {
+      display: none;
+    }
+  }
+}

@@ -23,10 +23,22 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 body {
   line-height: 1;
   margin: 0;
 }
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
 ol, ul {
   list-style: none;
 }

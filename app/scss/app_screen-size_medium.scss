@@ -1,0 +1,23 @@
+@mixin size-medium__header__actions {
+  @media screen and (max-width: 1200px) {
+    .header__actions {
+      margin-right: 0;
+    }
+  }
+}
+
+@mixin size-medium__header__nav {
+  @media screen and (max-width: 940px) {
+    .header__nav {
+      display: none;
+    }
+  }
+}
+
+@mixin size-medium__main {
+  @media screen and (max-width: 940px) {
+    .main__content {
+      display: none;
+    }
+  }
+}

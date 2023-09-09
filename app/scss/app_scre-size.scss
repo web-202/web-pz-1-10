@@ -1,0 +1,12 @@
+@import "app_screen-size_medium";
+@import "app_screen-size_small";
+
+@mixin size-screen__header {
+    @include size-medium__header__actions;
+    @include size-medium__header__nav;
+    @include size-small__header__search-form;
+}
+
+@mixin size-screen__main {
+  @include size-medium__main;
+}
