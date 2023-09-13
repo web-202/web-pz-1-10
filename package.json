@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Group282/pz-1-10#readme",
   "devDependencies": {
-    "browser-sync": "^2.27.5",
+    "browser-sync": "^2.29.3",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
