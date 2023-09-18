@@ -1,5 +1,5 @@
-@import "app_screen-size_medium";
-@import "app_screen-size_small";
+@import "screen-size/app_screen-size_medium";
+@import "screen-size/app_screen-size_small";
 
 @mixin size-screen__header {
     @include size-medium__header__actions;

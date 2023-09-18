@@ -3,100 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
-  <title>PZ_1_10</title>
+  <title class="page-title">PZ_1_10</title>
   <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
-<body>
+<body class="body">
 
 <header class="header">
   <div class="header__logo">
-    <a href="/" class="header__logo-link">
-      <img src="./img/github-mark-white.svg" width="32" height="32" alt="Логотип">
+    <a href="/" class="logo logo-link">
+      <img src="./img/github-mark-white.svg" width="32" height="32" alt="Логотип" class="logo__image">
     </a>
   </div>
   <nav class="header__nav">
     <ul class="header__nav-list">
-      <li class="header__nav-item">
-        <a href="#" class="header__nav-link">Why GitHub?</a>
-        <img width="16" height="16" src="./img/arow-down.png" alt="">
+      <li class="nav__item">
+        <a href="#" class="nav__link">Why GitHub?</a>
+        <img width="16" height="16" src="./img/arow-down.png" alt="" class="nav__arrow">
       </li>
-      <li class="header__nav-item">
-        <a href="#" class="header__nav-link">Team</a>
+      <li class="nav__item">
+        <a href="#" class="nav__link">Team</a>
       </li>
-      <li class="header__nav-item">
-        <a href="#" class="header__nav-link">Enterprise</a>
+      <li class="nav__item">
+        <a href="#" class="nav__link">Enterprise</a>
       </li>
-      <li class="header__nav-item">
-        <a href="#" class="header__nav-link">Explore</a>
-        <img width="16" height="16" src="./img/arow-down.png" alt="">
+      <li class="nav__item">
+        <a href="#" class="nav__link">Explore</a>
+        <img width="16" height="16" src="./img/arow-down.png" alt="" class="nav__arrow">
       </li>
-      <li class="header__nav-item">
-        <a href="#" class="header__nav-link">Marketplace</a>
+      <li class="nav__item">
+        <a href="#" class="nav__link">Marketplace</a>
       </li>
-      <li class="header__nav-item">
-        <a href="#" class="header__nav-link">Pricing</a>
-        <img width="16" height="16" src="./img/arow-down.png" alt="">
+      <li class="nav__item">
+        <a href="#" class="nav__link">Pricing</a>
+        <img width="16" height="16" src="./img/arow-down.png" alt="" class="nav__arrow">
       </li>
     </ul>
   </nav>
 
-
   <div class="header__actions">
-    <form class="header__search-form">
-      <input type="text" class="header__search-input" placeholder="Search GitHub">
+    <form class="search-form header__search-form">
+      <label>
+        <input type="text" class="search-form__input" placeholder="Search GitHub">
+      </label>
     </form>
     <div class="header__user-actions">
-      <a href="#" class="header__user-link">Sign In</a>
-      <a href="#" class="header__user-link header__user-link_border">Sign Up</a>
+      <a href="#">Sign In</a>
+      <a href="#" class="user-link_border">Sign Up</a>
     </div>
   </div>
 </header>
 
-
 <main class="main">
   <div class="main__content">
-    <div class="main-title">
+    <div class="main__title">
       Build for developers
     </div>
     <div class="main__content-subtitle">
-      GitHub is a development platform inspired by the way you work. From <span class="subtitle-span">open source</span> to <span class="subtitle-span">business</span>, you can host and review code, manage projects, and build software alongside 50 million developers.
+      GitHub is a development platform inspired by the way you work. From <span class="link-span">open source</span> to <span class="link-span">business</span>, you can host and review code, manage projects, and build software alongside 50 million developers.
     </div>
   </div>
 
-  <form class="login-form__content">
+  <form class="login-form login-form__content">
     <div class="login-form-item">
-      <label class="login-form-label">
+      <label for="username__input" class="login-form-label">
         Username
       </label>
-      <input type="text" class="login-form-input">
+      <input id="username__input" type="text" class="login-form-input">
     </div>
     <div class="login-form-item">
-      <label class="login-form-label">
+      <label for="password__input" class="login-form-label">
         Email
       </label>
-      <input type="text" class="login-form-input">
+      <input id="password__input" type="text" class="login-form-input">
     </div>
     <div class="login-form-item">
-      <label class="login-form-label">
+      <label for="email__input" class="login-form-label">
         Password
       </label>
-      <input type="text" class="login-form-input">
+      <input id="email__input" type="text" class="login-form-input">
     </div>
 
     <div class="login-form-validation">
       Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter.
-      <a class="form-a" href="">Learn more</a>.
+      <a class="link-a" href="">Learn more</a>.
     </div>
 
     <button class="login-form-button">Sign up for GitHub</button>
 
     <div class="login-form-politics">
-      By clicking "Sign up for GitHub", you agree to our <a class="form-a" href="">Terms of Service</a> and
-      <a class="form-a" href="">Privacy Statement</a>. We'll occasionally send you account related emails.
+      By clicking "Sign up for GitHub", you agree to our <a class="link-a" href="">Terms of Service</a> and
+      <a class="link-a" href="">Privacy Statement</a>. We'll occasionally send you account related emails.
     </div>
   </form>
 </main>
-
 
 <script src="js/bundle.js"></script>
 </body>

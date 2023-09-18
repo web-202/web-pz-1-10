@@ -1,0 +1,20 @@
+.header {
+  &__user-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__user-link_border {
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid $color-dark-white;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+    gap: 16px;
+  }
+}

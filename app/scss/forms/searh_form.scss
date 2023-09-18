@@ -1,0 +1,12 @@
+.search {
+  &-form__input {
+    border:none;
+    padding: 8px;
+    background-color: $color-light-gray;
+    border-radius: 4px;
+    color: white;
+    &::placeholder {
+      color: $color-dark-white;
+    }
+  }
+}
