@@ -90,14 +90,13 @@ body {
     color: $color-dark-white;
   }
 
-  &__content-subtitle > span {
-    color: white;
-    border-bottom: 1px solid $color-dark-white;
-  }
-
   @include size-screen__main;
 }
 
+.subtitle-span {
+  color: white;
+  border-bottom: 1px solid $color-dark-white;
+}
 .login {
   &-form__content {
     max-width: 400px;
@@ -129,11 +128,6 @@ body {
     color: $color-dark-gray;
     margin-bottom:16px;
   }
-
-  &-form-validation > a, &-form-politics > a {
-    color: blue;
-  }
-
   &-form-button {
     background-color: $color-lime;
     padding: 24px;
@@ -147,3 +141,6 @@ body {
   }
 }
 
+.form-a {
+  color: blue;
+}

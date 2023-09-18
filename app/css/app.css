@@ -218,14 +218,15 @@ body {
   line-height: 24px;
   color: #C4C5C6;
 }
-.main__content-subtitle > span {
-  color: white;
-  border-bottom: 1px solid #C4C5C6;
-}
 @media screen and (max-width: 940px) {
   .main .main__content {
     display: none;
   }
+}
+
+.subtitle-span {
+  color: white;
+  border-bottom: 1px solid #C4C5C6;
 }
 
 .login-form__content {
@@ -262,9 +263,6 @@ body {
   color: #24292E;
   margin-bottom: 16px;
 }
-.login-form-validation > a, .login-form-politics > a {
-  color: blue;
-}
 .login-form-button {
   background-color: #2EBC4F;
   padding: 24px;
@@ -275,4 +273,8 @@ body {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 32px;
+}
+
+.form-a {
+  color: blue;
 }
