@@ -1,0 +1,13 @@
+@import "./header-navigation/header-navigation";
+@import "./header-controls/header-controls";
+
+.header {
+  display: flex;
+  background-color: $header-background-color;
+  color: $text-color;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5vh 0.5vw;
+}
+
+

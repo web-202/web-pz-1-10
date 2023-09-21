@@ -1,0 +1,30 @@
+.header-auth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-auth__signing-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
+.header-auth__signup-button {
+  background: none;
+  border: 1px white solid;
+  border-radius: 4px;
+  padding: 0.5vh 0.2vw;
+  margin-left: 1vw;
+  color: white;
+  font-size: 18px;
+}
+
+.header-auth__signing-button:hover {
+  cursor: pointer;
+}
+
+.header-auth__signup-button:hover {
+  cursor: pointer;
+}

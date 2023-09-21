@@ -1,0 +1,22 @@
+@import "./header-auth/header-auth";
+
+.header-controls {
+  display: flex;
+}
+
+.header-search {
+  margin-right: 2vw;
+}
+
+.header-search__search-input {
+  background-color: #3f4448;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.header-search__search-input::placeholder {
+  color: white;
+}
+

@@ -1,0 +1,20 @@
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-navigation__list {
+  display: flex;
+}
+
+.header-navigation__item {
+  margin-left: 1vw;
+}
+
+.header-navigation__dropdown-item {
+  margin-left: 1vw;
+  background: none;
+  border: none;
+  color: white;
+}

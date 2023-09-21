@@ -12,17 +12,17 @@ const cache = require('gulp-cache');
 const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
-  return gulp.src('app/scss/app.scss')
+  return gulp.src('github/scss/github.scss')
     .pipe(sass())
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('github/css'))
     .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('browser-sync', function () {
   browserSync({
     server: {
-      baseDir: 'app'
+      baseDir: 'github'
     },
     notify: false
   });
@@ -30,23 +30,23 @@ gulp.task('browser-sync', function () {
 
 gulp.task('js-dev', function () {
   return gulp.src([
-    'app/libs/somelibs.js'
+    'github/libs/somelibs.js'
   ])
     .pipe(concat('bundle.js'))
-    .pipe(gulp.dest('app/js'));
+    .pipe(gulp.dest('github/js'));
 });
 
 gulp.task('js-prod', function () {
   return gulp.src([
-    'app/libs/somelibs.js'
+    'github/libs/somelibs.js'
   ])
     .pipe(concat('bundle.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('app/js'));
+    .pipe(gulp.dest('github/js'));
 });
 
 gulp.task('code', function () {
-  return gulp.src('app/*.html')
+  return gulp.src('github/*.html')
     .pipe(browserSync.reload({stream: true}))
 });
 
@@ -56,7 +56,7 @@ gulp.task('clean', async function () {
 });
 
 gulp.task('img', function () {
-  return gulp.src('app/img/**/*')
+  return gulp.src('github/img/**/*')
     .pipe(cache(imagemin({
       interlaced: true,
       progressive: true,
@@ -69,17 +69,17 @@ gulp.task('img', function () {
 gulp.task('copy', async function () {
 
   gulp.src([
-    'app/css/app.css'
+    'github/css/github.css'
   ])
     .pipe(gulp.dest('dist/css'))
 
-  gulp.src('app/fonts/**/*')
+  gulp.src('github/fonts/**/*')
     .pipe(gulp.dest('dist/fonts'))
 
-  gulp.src('app/js/**/*')
+  gulp.src('github/js/**/*')
     .pipe(gulp.dest('dist/js'))
 
-  gulp.src('app/*.html')
+  gulp.src('github/*.html')
     .pipe(gulp.dest('dist'));
 
 });
@@ -89,9 +89,9 @@ gulp.task('clear', function (callback) {
 })
 
 gulp.task('watch', function () {
-  gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'));
-  gulp.watch('app/*.html', gulp.parallel('code'));
-  gulp.watch(['app/js/index.js', 'app/libs/**/*.js'], gulp.parallel('js-dev'));
+  gulp.watch('github/scss/**/*.scss', gulp.parallel('sass'));
+  gulp.watch('github/*.html', gulp.parallel('code'));
+  gulp.watch(['github/js/index.js', 'github/libs/**/*.js'], gulp.parallel('js-dev'));
 });
 
 gulp.task('default', gulp.parallel('sass', 'js-dev', 'browser-sync', 'watch'));
