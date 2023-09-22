@@ -12,9 +12,17 @@
   margin-left: 1vw;
 }
 
+.header-navigation__link:hover {
+  cursor: pointer;
+}
+
 .header-navigation__dropdown-item {
   margin-left: 1vw;
   background: none;
   border: none;
   color: white;
+}
+
+.header-navigation__dropdown-item:hover {
+  cursor: pointer;
 }

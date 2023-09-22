@@ -1,0 +1,20 @@
+.main-description {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-description-content {
+  width: 60%;
+}
+
+.main-description__title {
+  font-size: 68px;
+  font-weight: bold;
+  color: white;
+}
+
+.main-description__description {
+  margin-top: 2vh;
+  font-size: 28px;
+  color: gray;
+}

@@ -1,0 +1,10 @@
+@import "./main-description/main-description";
+@import "./main_auth/main_auth";
+
+.main {
+  background-color: $background-color;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 92vh;
+}
