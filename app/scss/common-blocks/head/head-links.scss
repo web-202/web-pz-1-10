@@ -1,0 +1,26 @@
+.head-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .head-links__ul {
+    display: flex;
+    flex-direction: row;
+    font-family: Tahoma;
+    font-size: 15px;
+    .head-links__li {
+      padding-left: 10px;
+      .naprav {
+        color: grey;
+        padding-left: 2px;
+      }
+      a {
+        text-decoration: none;
+        color: $text-color;
+        &:hover {
+          color: $link-hover-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.content__left {
+  flex: 1;
+  color: $content-text-color;
+  padding: 20px 0 0 144px;
+  
+  &-title {
+    font-size: 60px;
+    padding-bottom: 20px;
+    width: 250px;
+  }
+  
+  &-title__under {
+    color: rgb(149, 152, 154);
+    font-size: 20px;
+    width: 471px;
+    line-height: 30px;
+    
+    &-link {
+      color: $content-text-color;
+    }
+  }
+}

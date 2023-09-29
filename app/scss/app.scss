@@ -1,3 +1,15 @@
 @import "variables";
 @import "reset";
 @import "media-query";
+@import "common-blocks/head/head"; 
+@import "common-blocks/head/head-logo";
+@import "common-blocks/head/head-links";
+@import "common-blocks/head/head-auth__button";
+@import "common-blocks/main-content/content";
+@import "common-blocks/main-content/content-left/content-left";
+@import "common-blocks/main-content/content-right/content-right";
+@import "common-blocks/main-content/content-right/auth-form.scss";
+
+body{
+    min-width: 1170px;
+}

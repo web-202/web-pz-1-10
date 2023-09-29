@@ -1,0 +1,58 @@
+.head-auth__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 420px;
+  
+  .head-auth__button-input {
+    background-color: rgb(48, 52, 56);
+    width: 232px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+    color: white;
+    &::placeholder {
+      color: $input-placeholder-color;
+      padding-left: 8px;
+      font-size: 15px;
+
+    }
+    &:focus {
+      outline: none;
+      &:focus-within {
+        border: 2px solid rgba(50, 205, 50, 0.821);
+      }
+    }
+  }
+  .head-auth__button-btnIn {
+    border: 0;
+    background-color: $primary-bg-color;
+    color: $text-color;
+    font-size: 14px;
+    &:hover {
+      cursor: pointer;
+      transform: scale(0.95);
+    }
+    &:active {
+      color: $button-active-color;
+    }
+  }
+  .head-auth__button-btnUp {
+    width: 69px;
+    height: 34px;
+    background-color: $primary-bg-color;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 14px;
+    color: $text-color;
+    &:hover {
+      cursor: pointer;
+      transform: scale(0.95);
+    }
+    &:active {
+      color: $button-active-color;
+    }
+  }
+}
