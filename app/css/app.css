@@ -57,15 +57,17 @@ table {
 /*Extra large devices (large desktops, 1200px and up)*/
 .head {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   width: 1400px;
   height: 70px;
-  background-color: rgb(27, 31, 35);
+  background-color: #1b1f23;
 }
 
 .head-logo {
@@ -73,6 +75,7 @@ table {
 }
 .head-logo .head-logo__image {
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   width: 35px;
@@ -83,25 +86,31 @@ table {
 
 .head-links {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .head-links .head-links__ul {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   font-family: Tahoma;
@@ -124,22 +133,26 @@ table {
 
 .head-auth__button {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   margin-left: 420px;
 }
 .head-auth__button .head-auth__button-input {
-  background-color: rgb(48, 52, 56);
+  background-color: #303438;
   width: 232px;
   height: 30px;
   border-radius: 5px;
@@ -148,27 +161,27 @@ table {
   color: white;
 }
 .head-auth__button .head-auth__button-input::-webkit-input-placeholder {
-  color: rgb(164, 167, 170);
+  color: #a4a7aa;
   padding-left: 8px;
   font-size: 15px;
 }
 .head-auth__button .head-auth__button-input::-moz-placeholder {
-  color: rgb(164, 167, 170);
+  color: #a4a7aa;
   padding-left: 8px;
   font-size: 15px;
 }
 .head-auth__button .head-auth__button-input:-ms-input-placeholder {
-  color: rgb(164, 167, 170);
+  color: #a4a7aa;
   padding-left: 8px;
   font-size: 15px;
 }
 .head-auth__button .head-auth__button-input::-ms-input-placeholder {
-  color: rgb(164, 167, 170);
+  color: #a4a7aa;
   padding-left: 8px;
   font-size: 15px;
 }
 .head-auth__button .head-auth__button-input::placeholder {
-  color: rgb(164, 167, 170);
+  color: #a4a7aa;
   padding-left: 8px;
   font-size: 15px;
 }
@@ -180,7 +193,7 @@ table {
 }
 .head-auth__button .head-auth__button-btnIn {
   border: 0;
-  background-color: rgb(27, 31, 35);
+  background-color: #1b1f23;
   color: rgba(245, 245, 245, 0.93);
   font-size: 14px;
 }
@@ -191,12 +204,12 @@ table {
           transform: scale(0.95);
 }
 .head-auth__button .head-auth__button-btnIn:active {
-  color: rgb(142, 184, 145);
+  color: #8eb891;
 }
 .head-auth__button .head-auth__button-btnUp {
   width: 69px;
   height: 34px;
-  background-color: rgb(27, 31, 35);
+  background-color: #1b1f23;
   border: 1px solid white;
   border-radius: 5px;
   font-size: 14px;
@@ -209,7 +222,7 @@ table {
           transform: scale(0.95);
 }
 .head-auth__button .head-auth__button-btnUp:active {
-  color: rgb(142, 184, 145);
+  color: #8eb891;
 }
 
 .content {
@@ -219,12 +232,15 @@ table {
   background-size: cover;
   background-repeat: no-repeat;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   font-family: Tahoma;
@@ -232,6 +248,7 @@ table {
 
 .content__left {
   -webkit-box-flex: 1;
+  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   color: white;
@@ -243,7 +260,7 @@ table {
   width: 250px;
 }
 .content__left-title__under {
-  color: rgb(149, 152, 154);
+  color: #95989a;
   font-size: 20px;
   width: 471px;
   line-height: 30px;
@@ -254,6 +271,7 @@ table {
 
 .content__right {
   -webkit-box-flex: 1;
+  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 10px;
@@ -265,13 +283,16 @@ table {
 
 .auth-form {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: start;
+  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 15px 10px;
@@ -279,7 +300,7 @@ table {
   height: 410px;
 }
 .auth-form a {
-  color: rgb(90, 150, 228);
+  color: #5a96e4;
 }
 .auth-form__field {
   margin-bottom: 15px;
@@ -287,7 +308,7 @@ table {
 .auth-form__label {
   font-size: 14px;
   line-height: 34px;
-  color: rgb(78, 85, 82);
+  color: #4e5552;
 }
 .auth-form__input {
   width: 390px;
@@ -296,7 +317,7 @@ table {
   border-radius: 5px;
 }
 .auth-form__first-text__p {
-  color: rgb(106, 106, 106);
+  color: #6a6a6a;
   font-size: 12px;
   margin-bottom: 14px;
 }
@@ -305,7 +326,7 @@ table {
 }
 .auth-form__button {
   margin: 0 auto;
-  background-color: rgb(43, 178, 62);
+  background-color: #2bb23e;
   color: #fff;
   border: none;
   width: 420px;
@@ -317,10 +338,10 @@ table {
   margin-bottom: 30px;
 }
 .auth-form__button:hover {
-  background-color: rgb(87, 198, 102);
+  background-color: #57c666;
 }
 .auth-form__second-text__p {
-  color: rgb(106, 106, 106);
+  color: #6a6a6a;
   font-size: 12px;
   margin-bottom: 14px;
 }
