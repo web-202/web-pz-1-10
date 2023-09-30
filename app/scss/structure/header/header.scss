@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    background-color: #24292e;
+    position: relative;
+
+    &__logo{
+        margin: 15px;
+        color: white;
+    }
+}
+
+@import "./header-control/header-control";
+@import './header-nav/header-nav';

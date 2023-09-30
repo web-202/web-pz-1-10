@@ -1,0 +1,13 @@
+.main-content{
+    width: 60%;
+
+    &__text{
+        color: $color-text-main;
+    }
+
+    &__title{
+        color: $color-text-main;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+}

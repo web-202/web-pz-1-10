@@ -1,0 +1,10 @@
+.main{
+    height: 200px;
+    width: 800px;
+    margin: auto;
+    margin-top: 200px;  
+    align-items: center;
+}
+
+@import './main-menu/main-menu.scss';
+@import './main-content/main-content.scss';

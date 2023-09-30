@@ -1,0 +1,19 @@
+.header-nav{
+    display: flex;
+    align-self: center;
+
+    &__item{
+        margin-left: 10px;
+        color: gray;
+        display: flex;
+    }
+    
+    &__link{
+        text-decoration: none;
+        color: white;
+    }
+
+    &__svg{
+        margin-left: 3px;
+    }
+}

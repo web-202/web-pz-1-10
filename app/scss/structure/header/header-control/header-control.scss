@@ -1,0 +1,40 @@
+.header-control{
+    position: absolute;
+    right: 0;
+    top: 30%;
+    margin-right: 30px;
+    display: flex;
+
+    &__textbox{
+        background-color: $background-textbox-header;
+        border: 0;
+        border-radius: 4px;
+        color: white;
+        padding: 5px;
+    }
+
+    &__log{
+        background-color: $background-header;
+        color: $color-text-header;
+        border: 0;    
+    }
+
+    &__reg{
+        background-color: $background-header;
+        color: $color-text-header;
+        border: 1px solid $color-text-header;
+        border-radius: 4px;
+        padding: 5px;         
+    }
+
+    &__search_menu{
+        position: relative;
+    }
+
+    &__click_search{
+        color: $color-text-header;
+        position: absolute;
+        right: 0;
+        margin: 5px;
+    }
+}
