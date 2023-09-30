@@ -8,6 +8,132 @@
 </head>
 <body>
 
+<div class="app">
+  <header class="header">
+    <div class="header-logo">
+      <img src="./img/github-mark-white.png" alt="GitHub" class="header-logo__brand-img">
+    </div>
+
+    <div class="header-main-navigation">
+      <ul class="header-main-navigation__list">
+        <li class="header-main-navigation__list-item">
+          Why GitHub?
+          <img class="header-main-navigation__arrow-dawn" src="./img/svg/arrow-dawn-symbol.svg" alt="">
+        </li>
+        <li class="header-main-navigation__list-item">Team</li>
+        <li class="header-main-navigation__list-item">Enterprise</li>
+        <li class="header-main-navigation__list-item">
+          Explore
+          <img class="header-main-navigation__arrow-dawn" src="./img/svg/arrow-dawn-symbol.svg" alt="">
+        </li>
+        <li class="header-main-navigation__list-item">Marketplace</li>
+        <li class="header-main-navigation__list-item">
+          Pricing
+          <img class="header-main-navigation__arrow-dawn" src="./img/svg/arrow-dawn-symbol.svg" alt="">
+        </li>
+      </ul>
+    </div>
+
+    <div class="header-hamburger-navigation">
+      <input id="menu-toggle" type="checkbox">
+      <label class="header-hamburger-navigation__hamburger-menu" for="menu-toggle">
+        <div class="hamburger-menu-btn"></div>
+      </label>
+
+      <div class="header-hamburger-navigation__menu-container">
+        <ul class="header-hamburger-navigation__list">
+          <li class="header-hamburger-navigation__list-item">Why GitHub?</li>
+          <li class="header-hamburger-navigation__list-item">Team</li>
+          <li class="header-hamburger-navigation__list-item">Enterprise</li>
+          <li class="header-hamburger-navigation__list-item">Explore</li>
+          <li class="header-hamburger-navigation__list-item">Marketplace</li>
+          <li class="header-hamburger-navigation__list-item">Pricing</li>
+        </ul>
+
+        <div class="header-hamburger-navigation__auth-btn-container">
+          <button class="header-auth-btn__auth-btn">
+            Sign in
+          </button>
+
+          <button class="header-auth-btn__auth-btn header-auth-btn__auth-btn_active">
+            Sign up
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-search-form">
+      <p class="header-search-form__text">Search GitHub</p>
+      <svg class="header-search-form__slash-img"
+           xmlns="http://www.w3.org/2000/svg"
+           width="22" height="20"
+           aria-hidden="true">
+        <path fill="none" stroke="#979A9C" opacity=".4"
+              d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3
+                3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z">
+        </path>
+        <path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path>
+      </svg>
+    </div>
+
+    <div class="header-auth-btn">
+      <button class="header-auth-btn__auth-btn">
+        Sign in
+      </button>
+
+      <button class="header-auth-btn__auth-btn header-auth-btn__auth-btn_active">
+        Sign up
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main-about">
+      <h1 class="main-about__title">Built for developers</h1>
+      <p class="main-about__description">
+        GitHub is a development platform inspired by the way you work.
+        From <span class="main-about__link-word">open source</span> to
+        <span class="main-about__link-word">business</span>, you can host and
+        review code, manage projects, and build software alongside 50 million developers.
+      </p>
+    </div>
+
+    <div class="sign-up">
+      <form action="#" class="sign-up-form">
+        <div class="sign-up-form__input-block">
+          <label for="username" class="sign-up-form__label">Username</label>
+          <input id="username" name="username" type="text" class="sign-up-form__input">
+        </div>
+
+        <div class="sign-up-form__input-block">
+          <label for="email" class="sign-up-form__label">Email</label>
+          <input id="email" name="email" type="text" class="sign-up-form__input">
+        </div>
+
+        <div class="sign-up-form__input-block">
+          <label for="password" class="sign-up-form__label">Password</label>
+          <input id="password" name="password" type="password" class="sign-up-form__input">
+          <p class="sign-up-form__input-description">
+            Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter.
+            <a class="sign-up-form__form-link" href="#">Learn more</a>.
+          </p>
+        </div>
+
+        <button class="sign-up-form__auth-button">
+          Sign up for GitHub
+        </button>
+
+        <p class="sign-up-form__form-description">
+          By clicking "Sign up for GitHub", you agree to our
+          <a class="sign-up-form__form-link" href="#">Terms of Service</a> and
+          <a class="sign-up-form__form-link" href="#">Privacy Statement</a>.
+          We'll occasionally send you account related emails.
+        </p>
+      </form>
+    </div>
+  </main>
+</div>
+
 <script src="js/bundle.js"></script>
 
 </body>

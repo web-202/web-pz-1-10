@@ -1,0 +1,12 @@
+@include desktop {
+  .sign-up {
+    min-width: 400px;
+    max-width: 600px;
+  }
+}
+
+@include laptop {
+  .sign-up {
+    width: 400px;
+  }
+}

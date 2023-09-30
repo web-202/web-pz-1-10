@@ -1,0 +1,29 @@
+@include desktop {
+  .header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50px auto 250px 230px;
+  }
+}
+
+@include laptop {
+  .header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50px auto 250px 230px;
+  }
+}
+
+@include table {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@include mobile {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+}

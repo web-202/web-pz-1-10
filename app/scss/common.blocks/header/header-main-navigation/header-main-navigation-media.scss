@@ -1,0 +1,23 @@
+@include desktop {
+  .header-main-navigation {
+    display: block;
+  }
+}
+
+@include laptop {
+  .header-main-navigation {
+    display: block;
+  }
+}
+
+@include table {
+  .header-main-navigation {
+    display: none;
+  }
+}
+
+@include mobile {
+  .header-main-navigation {
+    display: none;
+  }
+}

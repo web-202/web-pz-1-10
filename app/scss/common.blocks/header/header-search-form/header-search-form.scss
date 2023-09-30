@@ -1,0 +1,15 @@
+.header-search-form {
+  margin: 0 10px;
+  padding: 8px 2px 8px 10px;
+  width: 230px;
+  border-radius: 5px;
+  background-color: rgb(63, 68, 72);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  .header-search-form__text {
+    color: $gray-color;
+  }
+}

@@ -1,0 +1,23 @@
+@include desktop {
+  .header-hamburger-navigation {
+    display: none;
+  }
+}
+
+@include laptop {
+  .header-hamburger-navigation {
+    display: none;
+  }
+}
+
+@include table {
+  .header-hamburger-navigation {
+    display: block;
+  }
+}
+
+@include mobile {
+  .header-hamburger-navigation {
+    display: block;
+  }
+}

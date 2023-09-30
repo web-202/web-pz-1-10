@@ -1,0 +1,23 @@
+@include desktop {
+  .header-auth-btn {
+    display: flex;
+  }
+}
+
+@include laptop {
+  .header-auth-btn {
+    display: flex;
+  }
+}
+
+@include table {
+  .header-auth-btn {
+    display: none;
+  }
+}
+
+@include mobile {
+  .header-auth-btn {
+    display: none;
+  }
+}

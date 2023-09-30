@@ -1,3 +1,40 @@
+// Variables, Reset style, Mixins, Media style
 @import "variables";
 @import "reset";
+@import "mixin";
 @import "media-query";
+
+//Header style
+@import "./common.blocks/header/header";
+@import "./common.blocks/header/header-logo/__brand-img/header-logo__brand-img";
+@import "./common.blocks/header/header-main-navigation/__list/header-main-navigation__list";
+@import "./common.blocks/header/header-main-navigation/__list-item/header-main-navigation__list-item";
+@import "./common.blocks/header/header-main-navigation/__arrow-dawn/header-main-navigation__arrow-dawn";
+@import "./common.blocks/header/header-search-form/header-search-form";
+@import "./common.blocks/header/header-auth-btn/header-auth-btn";
+@import "./common.blocks/header/header-auth-btn/__auth-btn/header-auth-btn__auth-btn";
+@import "./common.blocks/header/header-auth-btn/__auth-btn/_active/header-auth-btn__auth-btn_active";
+
+@import "./common.blocks/header/header-hamburger-navigation/header-hamburger-navigation";
+@import "./common.blocks/header/header-hamburger-navigation/__menu-container/header-hamburger-navigation__menu-container";
+@import "./common.blocks/header/header-hamburger-navigation/__hamburger-menu/header-hamburger-navigation__hamburger-menu";
+@import "./common.blocks/header/header-hamburger-navigation/__list/header-hamburger-navigation__list";
+@import "./common.blocks/header/header-hamburger-navigation/__list-item/header-hamburger-navigation__list-item";
+@import "./common.blocks/header/header-hamburger-navigation/__auth-btn-container/header-hamburger-navigation__auth-btn-container";
+
+//Body style
+@import "./common.blocks/main/main";
+@import "./common.blocks/main/main-about/main-about";
+@import "./common.blocks/main/sign-up/sign-up";
+@import "./common.blocks/main/sign-up/sign-up-form/sign-up-form";
+@import "./common.blocks/main/sign-up/sign-up-form/__input-block/sign-up-form__input-block";
+@import "./common.blocks/main/sign-up/sign-up-form/__auth-button/sign-up-form__auth-button";
+@import "./common.blocks/main/sign-up/sign-up-form/__form-link/sign-up-form__form-link";
+@import "./common.blocks/main/sign-up/sign-up-form/__form-description/sign-up-form__form-description";
+
+// App style
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

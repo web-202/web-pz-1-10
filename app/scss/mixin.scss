@@ -1,0 +1,29 @@
+// Media queries
+
+//Extra large devices (large desktops, 1200px and up)
+@mixin desktop() {
+  @media (min-width: $breakpoint_xxl) {
+    @content;
+  }
+}
+
+//Large devices (desktops, 992px and up)
+@mixin laptop() {
+  @media (min-width: $breakpoint_xl) and (max-width: $breakpoint_xxl - 1) {
+    @content;
+  }
+}
+
+//Medium devices (tablets, 768px and up)
+@mixin table() {
+  @media (min-width: $breakpoint_md) and (max-width: $breakpoint_xl - 1) {
+    @content;
+  }
+}
+
+//Small devices (landscape phones, 576px and up)
+@mixin mobile() {
+  @media (max-width: $breakpoint_md - 1) {
+    @content;
+  }
+}
