@@ -49,9 +49,325 @@ table {
   border-spacing: 0;
 }
 
+html, body {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main {
+  height: 65px;
+}
+
+.logo {
+  height: 50px;
+  width: 45px;
+  margin: 5px 5px;
+  margin-left: 75px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 65px;
+  background-color: #323232;
+}
+.menu .shao-sing {
+  font-size: 15px;
+  color: aliceblue;
+  border: 0px;
+  background-color: #323232;
+  width: 75px;
+  height: 30px;
+  margin: 20px 5px;
+  border-radius: 5px;
+}
+.menu .shao-sing:hover {
+  background-color: #e3e5e7;
+}
+.menu .shao-sing-up {
+  font-size: 15px;
+  color: aliceblue;
+  background-color: #323232;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  width: 75px;
+  height: 30px;
+  margin: 20px 5px;
+  margin-right: 75px;
+}
+.menu .shao-sing-up:hover {
+  background-color: #e3e5e7;
+}
+.menu .search {
+  height: 25px;
+  border-radius: 5px;
+  margin: 20px;
+  background-color: #323232;
+  border: 1.5px solid white;
+  margin-right: 5px;
+}
+.menu .search:hover {
+  background-color: #e3e5e7;
+}
+
+nav {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+nav ul {
+  list-style: none;
+  margin-left: 25px;
+  padding: 0;
+  margin: 25px 10px;
+}
+nav ul li {
+  font-size: 15px;
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  margin: 5px 8px;
+}
+nav ul li a:hover {
+  background-color: #e3e5e7;
+}
+
+.shao-page {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.shao-page .fon {
+  background-image: url("https://krot.info/uploads/posts/2020-10/1603495624_49-p-serii-fon-dlya-prezentatsii-59.jpg");
+  width: 100%;
+  height: 677px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.shao-page .fon .text {
+  width: 48%;
+  color: aliceblue;
+}
+.shao-page .fon .text p {
+  font-size: 25px;
+  margin: -135px 145px;
+}
+.shao-page .fon .text p:hover {
+  background-color: #959596;
+}
+.shao-page .fon .text h2 {
+  color: aliceblue;
+  font-size: 65px;
+  margin: 145px;
+}
+.shao-page .fon .text h2:hover {
+  background-color: #959596;
+}
+.shao-page .fon .text a {
+  color: aliceblue;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.shao-page .fon .forms {
+  margin: -300px 900px;
+  width: 30%;
+  background-color: aliceblue;
+  height: 70%;
+  border-radius: 10px;
+}
+.shao-page .fon .forms .form {
+  padding-top: 40px;
+}
+.shao-page .fon .forms .form input {
+  border: 1px solid #302f2f;
+  background-color: azure;
+  color: #000000;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 300px;
+  height: 40px;
+  margin-left: 65px;
+}
+.shao-page .fon .forms .form label {
+  color: black;
+  font-size: 20px;
+  margin-left: 65px;
+}
+.shao-page .fon .forms .form p {
+  color: black;
+  font-size: 12px;
+  width: 325px;
+  margin-left: 65px;
+}
+.shao-page .fon .forms .form p a {
+  color: #0b55bc;
+  text-decoration: none;
+  font-size: 12px;
+  display: inline-block;
+}
+.shao-page .fon .forms .form .button {
+  border-radius: 5px;
+  border: #40cc47;
+  background-color: #40cc47;
+  width: 300px;
+  height: 50px;
+  margin: 15px 0px;
+  margin-left: 65px;
+}
+.shao-page .fon .forms .form .button a {
+  font-size: 18px;
+  color: azure;
+}
+
 /* Extra small devices (portrait phones, less than 576px)*/
 /* No media query for `xs` since this is the default in Bootstrap*/
 /*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+  .logo {
+    margin: 23px 5px;
+    margin-left: 5px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .menu {
+    width: 100%;
+  }
+  .menu .shao-sing {
+    margin-top: 23px;
+    margin-right: -7px;
+    width: 45px;
+    height: 15px;
+    font-size: 10px;
+  }
+  .menu .shao-sing-up {
+    width: 50px;
+    height: 15px;
+    margin-right: 5px;
+    margin-top: 23px;
+    font-size: 10px;
+  }
+  .menu .search {
+    width: 50px;
+    height: 13px;
+    margin-top: 23px;
+    font-size: 7px;
+    margin-right: -5px;
+  }
+
+  nav ul {
+    margin: 20px 1px;
+  }
+  nav ul li a {
+    font-size: 10px;
+    margin: 3px;
+  }
+
+  .shao-page .fon {
+    width: 100%;
+  }
+  .shao-page .fon .text {
+    width: 50%;
+    margin: -100px;
+  }
+  .shao-page .fon .text p {
+    font-size: 10px;
+    width: 55%;
+  }
+  .shao-page .fon .text h2 {
+    font-size: 35px;
+  }
+  .shao-page .fon h2 {
+    font-size: 10px;
+  }
+  .shao-page .fon .forms {
+    margin: -200px 200px;
+    width: 40%;
+    height: 45%;
+  }
+  .shao-page .fon .forms .form {
+    padding-top: 15px;
+  }
+  .shao-page .fon .forms .form input {
+    width: 130px;
+    height: 20px;
+    margin-left: 20px;
+  }
+  .shao-page .fon .forms .form label {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .shao-page .fon .forms .form p {
+    font-size: 8px;
+    margin-left: 20px;
+    width: 150px;
+  }
+  .shao-page .fon .forms .form p a {
+    font-size: 8px;
+  }
+  .shao-page .fon .forms .form .button {
+    height: 20px;
+    width: 100px;
+    margin-left: 35px;
+  }
+  .shao-page .fon .forms .form .button a {
+    font-size: 8px;
+  }
+}
 /*Medium devices (tablets, 768px and up)*/
-/*Large devices (desktops, 992px and up)*/
-/*Extra large devices (large desktops, 1200px and up)*/
+@media screen and (max-width: 768px) and (min-width: 577px) {
+  .logo {
+    margin: 3px 3px;
+    margin-left: 0px;
+  }
+
+  .menu {
+    width: 100%;
+  }
+  .menu .shao-sing {
+    margin: 20px 3px;
+    width: 65px;
+    height: 20px;
+  }
+  .menu .shao-sing-up {
+    width: 65px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  .menu .search {
+    width: 90px;
+    height: 20px;
+    margin-top: 20px;
+  }
+
+  nav ul {
+    margin: 25px 3px;
+  }
+  nav ul li a {
+    margin: 5px 3px;
+  }
+
+  .shao-page .fon .text {
+    width: 70%;
+    margin: -100px;
+  }
+  .shao-page .fon .text p {
+    font-size: 15px;
+  }
+  .shao-page .fon h2 {
+    font-size: 20px;
+  }
+  .shao-page .fon .forms {
+    margin: -250px 330px;
+    width: 55%;
+    height: 65%;
+  }
+}
