@@ -1,3 +1,252 @@
 @import "variables";
 @import "reset";
 @import "media-query";
+body{
+    background-color:#2b3137;
+    color: white;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    background-color: #24292f;
+    font-family: sans-serif;
+}
+.nav{
+    float: right ;
+    list-style: none ;
+}
+.nav li{
+    display: inline;
+    margin-top: 100px;
+    margin-left: 100px;
+    cursor: pointer;
+    transition: opacity 500ms ease;
+}
+.nav li:hover{
+    opacity: 0.5 ;
+}
+.search{
+    background-color: #3f4448;
+    color: #b6b8ba;
+    border-radius: 5px;
+}
+.blackButton{
+    background-color:#24292f;
+    color: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.hero{
+    columns: 2;
+}
+form {
+    background-color: #fafbfc;
+    color: #000;
+    border-radius: 10px;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.submit {
+    background-color: #2fbc4f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+}
+.submit:hover {
+    opacity: 0.8;
+}
+.container {
+    padding: 16px;
+}
+@media screen and (min-width: 320px) {
+    .header{
+        height: 65px;
+    }
+    .logo{
+        width: 20px;
+        height: 20px;
+    }
+    .nav{
+        margin-top: 5px;
+    }
+    .nav li{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .search{
+        height: 13px;
+        width: 100px;
+        margin-right: 60px;
+    }
+    .blackButton{
+        margin-left: 10px;
+        height: 18px;
+        width: 60px;
+    }
+    .hero{
+        columns: 1;
+    }
+    h2{
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    h6{
+        font-size: 15px;
+        margin-left: 40px;
+        width: 200px;
+    }
+    form{
+        margin-top: 20px;
+        font-size: 13px;
+        width: 250px;
+        margin-left: 30px;
+    }
+    .loginText{
+        font-size: 10px;
+    }
+    input{
+        height: 15px;
+    }
+}
+@media screen and (min-width: 425px) {
+    .header{
+        height: 50px;
+    }
+    .nav li{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .logo{
+       width: 40px;
+       height: 40px;
+    }
+    .nav{
+        margin-top: 15px;
+    }
+    .search{
+        margin-right: 0px;
+        margin-left: 20px;
+    }
+    h5{ 
+        margin-right: 0px;
+    }
+    .blackButton{
+        margin-left: 0px;
+    }
+    .hero{
+        margin-top: 20px;
+        columns: 2;
+    }
+    h2{
+        font-size: 40px;
+        margin-left: 140px;  
+    }
+    h6{
+        font-size: 15px;
+        width: 260px;
+        margin-left: 140px;
+        height: 200px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .search{
+        margin-left: 240px;
+        width: 120px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .nav li{
+        font-size: 20px;
+    }
+    .search{
+        font-size: 20px;
+        height: 22px;
+        width: 200px;   
+    }
+    .blackButton{
+        font-size: 20px;
+        width:120px;
+        height: 24px;
+    }
+    h2{
+        font-size: 80px;
+    }
+    h6{
+        font-size: 20px;
+        width: 400px;
+        height: 150px;
+    }
+    form{
+        font-size: 20px;
+        width: 500px;
+    }
+    .loginText{
+        font-size: 15px;
+    }
+    input{
+        height: 22px;
+    }
+    .submit{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 2560px) {
+    .header{
+        height: 60px;
+    }
+    .logo{
+        height: 60px;
+        width: 60px;
+    }
+    .nav li{
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    .search{
+        font-size: 30px;
+        height: 34px;
+        margin-left: 700px;
+        width: 300px;
+    }
+    .blackButton{
+        font-size: 30px;
+        height: 40px;
+    }
+    .hero{
+        margin-top: 50px;
+    }
+    h2{
+        font-size: 100px;
+        margin-left: 600px;
+    }
+    h6{
+        font-size: 30px;
+        margin-left: 600px;
+        width: 600px;
+    }
+    form{
+        font-size: 30px;
+        width: 600px;
+    }
+    .loginText{
+        font-size: 20px;
+    }
+    input{
+        height: 44px;
+    }
+    .submit{
+        font-size: 30px;
+    }
+}
