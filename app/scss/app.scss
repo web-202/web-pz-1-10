@@ -1,3 +1,38 @@
 @import "variables";
 @import "reset";
+
+@import "./header/header";
+
+@import "./header/__navigation/header__navigation";
+@import "./header/__navigation/__brand/navigation__brand";
+@import "./header/__navigation/__drop-down-button/navigation__drop-down-button";
+@import "./header/__navigation/__item/navigation__item";
+@import "./header/__navigation/__text/navigation__text";
+
+@import "./header/__authorizaton-search/header__authorization-search";
+@import "./header/__authorizaton-search/__header__search/header__search";
+@import "./header/__authorizaton-search/__header__search/__slash/search__slash";
+@import "./header/__authorizaton-search/__header__search/__text/search__text";
+@import "./header/__authorizaton-search/__authorization__item/authorization__item";
+
+
+
+@import "./intro/intro";
+@import "./intro/__title/intro__title";
+@import "./intro/__title/__main-text/title__main-text";
+@import "./intro/__title/__text/title__text";
+@import "./intro/__title/__text/-highlighted/title__text-highlighted";
+@import "./intro/__inner/intro__inner";
+@import "./intro/__registration/intro__registration";
+@import "./intro/__registration/-item/intro__registration-item";
+@import "./intro/__registration/-about/intro__registration-about";
+@import "./intro/__registration/-input/intro__registration-input";
+@import "./intro/__registration/-label/intro__registration-label";
+@import "./intro/__registration/-submit/intro__registration-submit";
+@import "./intro/__registration/-requires/intro__registration-requires";
+@import "./intro/__registration/-highlighted/intro__registration-highlighted";
+
+@import "./container/container";
+@import "./header/nav-toggle/nav-toggle";
+
 @import "media-query";

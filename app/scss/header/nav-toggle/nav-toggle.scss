@@ -1,0 +1,33 @@
+.nav__toggle {
+    display: none;
+}
+
+.nav__toggle-btn {
+  font-size: 30px;
+  background: indianred;
+
+}
+
+.nav__toggle-item {
+  background: #455b65;
+
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+
+  z-index: 100;
+
+}
+
+.nav__toggle-items {
+  display: none;
+}
+
+.nav__toggle-items.active {
+  display: block;
+
+  position: absolute;
+
+  z-index: 1000;
+}
+

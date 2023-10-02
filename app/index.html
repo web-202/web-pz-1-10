@@ -8,6 +8,157 @@
 </head>
 <body>
 
+<header class="header">
+
+  <div class="header__navigation">
+    <img class="navigation__brand" src="images/github-mark-white.png" alt="">
+
+    <div class="navigation__item">
+      <div class="navigation__text">
+        Why GitHub?
+      </div>
+
+      <button class="navigation__drop-down-button">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+             stroke="currentColor"
+             class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="navigation__item">
+      <div class="navigation__text">
+        Team
+      </div>
+    </div>
+
+    <div class="navigation__item">
+      <div class="navigation__text">
+        Enterprise
+      </div>
+    </div>
+
+    <div class="navigation__item">
+      <div class="navigation__text">
+        Explore
+      </div>
+
+      <button class="navigation__drop-down-button">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+             stroke="currentColor"
+             class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="navigation__item">
+      <div class="navigation__text">
+        Marketplace
+      </div>
+    </div>
+    <div class="navigation__item">
+      <div class="navigation__text">
+        Pricing
+      </div>
+
+      <button class="navigation__drop-down-button">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+             stroke="currentColor"
+             class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="header__authorization-search">
+    <div class="header__search">
+
+      <input class="search__text" placeholder="Search GitHub">
+
+      <div class="search__slash">
+        /
+      </div>
+
+    </div>
+
+    <div class="authorization__item">Sign in</div>
+    <div class="authorization__item authorization__item-bordered">Sign up</div>
+
+  </div>
+
+  <div class="nav__toggle">
+    <button class="nav__toggle-btn" id="nav__toggle-btn">
+      Menu
+    </button>
+
+    <div class="nav__toggle-items" id="nav__toggle-items">
+      <div class="nav__toggle-item">Why GitHub?</div>
+      <div class="nav__toggle-item">Team</div>
+      <div class="nav__toggle-item">Enterprise</div>
+      <div class="nav__toggle-item">Explore</div>
+      <div class="nav__toggle-item">Marketplace</div>
+      <div class="nav__toggle-item">Pricing</div>
+    </div>
+  </div>
+
+</header>
+
+<div class="intro">
+  <div class="container">
+    <div class="intro__inner">
+
+      <div class="intro__title">
+        <div class="title__main-text">
+          Built for developers
+        </div>
+
+        <div class="title__text">
+          Github is a development platform inspired by the way you work.
+          From <span class="title__text-highlighted">open source</span> to <span class="title__text-highlighted">business</span>,
+          you can host and review code, manage projects, and build software alongside 50
+          million developers.
+        </div>
+      </div>
+
+      <form action="" class="intro__registration">
+
+        <div class="intro__registration-item">
+          <label class="intro__registration-label" for="username">Username</label>
+          <input class="intro__registration-input" type="text" id="username" name="username" required>
+        </div>
+        <div class="intro__registration-item">
+          <label class="intro__registration-label" for="email">Email</label>
+          <input class="intro__registration-input" type="email" id="email" name="email" required>
+        </div>
+        <div class="intro__registration-item">
+          <label class="intro__registration-label" for="password">Password</label>
+          <input class="intro__registration-input" type="password" id="password" name="password" required>
+        </div>
+
+        <div class="intro__registration-requires">
+          Make sure it's least 15 characters OR at least 8 characters including a number and a lowercase letter. <span
+          class="intro__registration-highlighted">Learn more.</span>
+        </div>
+
+        <button class="intro__registration-submit" type="submit">Sing up for Github</button>
+
+        <div class="intro__registration-about">
+          By clicking "Sign up for GitHub", you agree to our <span class="intro__registration-highlighted">Terms of Service</span>
+          and
+          <span class="intro__registration-highlighted">Privacy Statement.</span> We'll occasionally send you account
+          related emails.
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+
 <script src="js/bundle.js"></script>
 
 </body>

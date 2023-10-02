@@ -1,22 +1,170 @@
 /* Extra small devices (portrait phones, less than 576px)*/
 /* No media query for `xs` since this is the default in Bootstrap*/
 
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
 
-}
 
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
+/*Extra large devices (large desktops, 1400 and up)*/
+@media (max-width: 1500px) {
 
-}
+    // Header-navigation
+    .navigation__text {
+      font-size: 15px;
+    }
 
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
+    // Header__authorization-search
+    .authorization__item {
+      font-size: 15px;
+      width: 60px;
+    }
+
+    // Intro
+    .title__main-text {
+      font-size: 70px;
+    }
+
+    .title__text {
+      font-size: 20px;
+    }
+
+    .intro__registration {
+      width: 35%;
+    }
+
+  // Header__authorization-search
+  .authorization__item:last-child {
+    margin-right: 0;
+  }
+
 
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
+@media (max-width: 1250px) {
+  // Header-navigation
+  .header {
+    justify-content: center;
+  }
 
+  .navigation__item{
+    display: none;
+  }
+
+  // Intro
+  .intro{
+    height: auto;
+  }
+
+  .intro__inner{
+    flex-wrap: wrap;
+  }
+
+  .intro__registration{
+    width: 60%;
+    margin: 0 auto 50px;
+  }
+
+  .intro__title {
+    width: 100%;
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+  .title__main-text {
+    text-align: center;
+    font-size: 90px;
+  }
+
+  .title__text {
+    font-size: 25px;
+  }
+
+  .nav__toggle{
+    display: block;
+    margin-top: 100px;
+
+    position: absolute;
+
+    z-index: 1000;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {
+  // Intro
+  .title__main-text {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .title__text {
+    font-size: 20px;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+  // Header__authorization-search
+  .header__search {
+    width: 200px;
+  }
+
+  .authorization__item {
+    width: 30px;
+    font-size: 12px;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+  .header {
+    height: auto;
+  }
+
+  // Header__authorization-search
+  .header__search {
+    width: 100px;
+  }
+
+  .search__text {
+    font-size: 12px;
+  }
+
+  .search__slash {
+    padding: 1px 1px;
+  }
+
+  .authorization__item {
+    margin: 0 auto;
+  }
+
+  .title__main-text {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .title__text {
+    font-size: 15px;
+  }
+
+  .intro__registration-label{
+    font-size: 15px;
+  }
+  .intro__registration-submit{
+    font-size: 20px;
+  }
+
+  .intro__registration-requires {
+    font-size: 15px;
+  }
+
+  .intro__registration-about {
+    font-size: 15px;
+  }
+
+  .intro__title {
+    padding-right: 10px;
+  }
+
+  .nav__toggle {
+    margin-top: 200px;
+  }
 }

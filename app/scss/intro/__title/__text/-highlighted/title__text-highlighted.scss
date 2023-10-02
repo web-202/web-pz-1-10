@@ -1,0 +1,16 @@
+.title__text-highlighted {
+  color: white;
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+.title__text-highlighted::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  border-bottom: 1px solid #606a6e;
+}

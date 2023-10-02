@@ -1,0 +1,17 @@
+.header__search {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  width: 300px;
+  margin: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+
+  font-size: 20px;
+  color: #c0c1c3;
+  background-color: #3f4448;
+
+  cursor: pointer;
+}

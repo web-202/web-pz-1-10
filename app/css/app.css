@@ -17,6 +17,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -49,9 +50,464 @@ table {
   border-spacing: 0;
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #24292e;
+  position: relative;
+  height: 9vh;
+}
+
+.header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation__brand {
+  margin-top: 20px;
+  height: 35px;
+  padding: 10px 20px;
+}
+
+.navigation__drop-down-button {
+  height: 24px;
+  width: 24px;
+  border: 0;
+  background-color: #24292e;
+  cursor: pointer;
+}
+
+.navigation__drop-down-button svg {
+  padding-top: 3px;
+  height: 18px;
+  width: 18px;
+  color: #91837a;
+}
+
+.navigation__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.navigation__text {
+  font-size: 20px;
+  color: white;
+}
+
+.header__authorization-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+  margin: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #c0c1c3;
+  background-color: #3f4448;
+  cursor: pointer;
+}
+
+.search__slash {
+  padding: 5px 10px;
+  border: 3px solid #5b5f63;
+  border-radius: 5px;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  -o-transition: transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+}
+
+.search__text {
+  width: 80%;
+  height: 40px;
+  background: inherit;
+  border: none;
+  color: white;
+  font-size: 20px;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.search__text:focus {
+  border: none;
+  outline: none;
+}
+.search__text:focus + .search__slash {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+.search__text::-webkit-input-placeholder {
+  color: rgba(169, 161, 161, 0.62);
+}
+.search__text::-moz-placeholder {
+  color: rgba(169, 161, 161, 0.62);
+}
+.search__text:-ms-input-placeholder {
+  color: rgba(169, 161, 161, 0.62);
+}
+.search__text::-ms-input-placeholder {
+  color: rgba(169, 161, 161, 0.62);
+}
+.search__text::placeholder {
+  color: rgba(169, 161, 161, 0.62);
+}
+
+.authorization__item {
+  margin-right: 25px;
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+.authorization__item-bordered:hover {
+  color: black;
+  background-color: white;
+}
+
+.authorization__item-bordered {
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.authorization__item:last-child {
+  margin-right: 150px;
+}
+
+.intro {
+  background-color: #2b3137;
+  width: 100%;
+  height: 91vh;
+}
+
+.intro__title {
+  padding-top: 100px;
+  padding-left: 20px;
+  width: 40%;
+}
+
+.title__main-text {
+  color: white;
+  font-size: 100px;
+}
+
+.title__text {
+  color: #a5a8aa;
+  line-height: 1.5;
+  font-size: 30px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.title__text-highlighted {
+  color: white;
+  position: relative;
+  cursor: pointer;
+}
+
+.title__text-highlighted::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  border-bottom: 1px solid #606a6e;
+}
+
+.intro__inner {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro__registration {
+  margin: 0 75px;
+  width: 50%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 30px;
+  background-color: white;
+}
+
+.intro__registration-item {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.intro__registration-about {
+  color: #464949;
+  line-height: 1.4;
+  font-size: 20px;
+}
+
+.intro__registration-input {
+  margin-top: 5px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 25px;
+  border-color: #e4e7ea;
+}
+
+.intro__registration-label {
+  display: block;
+  color: #5c6064;
+  font-size: 25px;
+}
+
+.intro__registration-submit {
+  background-color: #2ebc4f;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+  margin-bottom: 50px;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  -webkit-transition: opacity 0.1s linear;
+  -o-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+}
+
+.intro__registration-submit:hover {
+  opacity: 0.7;
+}
+
+.intro__registration-requires {
+  color: #464949;
+  line-height: 1.4;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.intro__registration-highlighted {
+  color: #116fd8;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 1750px;
+  margin: 0 auto;
+}
+
+.nav__toggle {
+  display: none;
+}
+
+.nav__toggle-btn {
+  font-size: 30px;
+  background: indianred;
+}
+
+.nav__toggle-item {
+  background: #455b65;
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.nav__toggle-items {
+  display: none;
+}
+
+.nav__toggle-items.active {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+}
+
 /* Extra small devices (portrait phones, less than 576px)*/
 /* No media query for `xs` since this is the default in Bootstrap*/
-/*Small devices (landscape phones, 576px and up)*/
-/*Medium devices (tablets, 768px and up)*/
-/*Large devices (desktops, 992px and up)*/
+/*Extra large devices (large desktops, 1400 and up)*/
+@media (max-width: 1500px) {
+  .navigation__text {
+    font-size: 15px;
+  }
+
+  .authorization__item {
+    font-size: 15px;
+    width: 60px;
+  }
+
+  .title__main-text {
+    font-size: 70px;
+  }
+
+  .title__text {
+    font-size: 20px;
+  }
+
+  .intro__registration {
+    width: 35%;
+  }
+
+  .authorization__item:last-child {
+    margin-right: 0;
+  }
+}
 /*Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1250px) {
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .navigation__item {
+    display: none;
+  }
+
+  .intro {
+    height: auto;
+  }
+
+  .intro__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .intro__registration {
+    width: 60%;
+    margin: 0 auto 50px;
+  }
+
+  .intro__title {
+    width: 100%;
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
+  .title__main-text {
+    text-align: center;
+    font-size: 90px;
+  }
+
+  .title__text {
+    font-size: 25px;
+  }
+
+  .nav__toggle {
+    display: block;
+    margin-top: 100px;
+    position: absolute;
+    z-index: 1000;
+  }
+}
+/*Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {
+  .title__main-text {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .title__text {
+    font-size: 20px;
+  }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+  .header__search {
+    width: 200px;
+  }
+
+  .authorization__item {
+    width: 30px;
+    font-size: 12px;
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+  .header {
+    height: auto;
+  }
+
+  .header__search {
+    width: 100px;
+  }
+
+  .search__text {
+    font-size: 12px;
+  }
+
+  .search__slash {
+    padding: 1px 1px;
+  }
+
+  .authorization__item {
+    margin: 0 auto;
+  }
+
+  .title__main-text {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .title__text {
+    font-size: 15px;
+  }
+
+  .intro__registration-label {
+    font-size: 15px;
+  }
+
+  .intro__registration-submit {
+    font-size: 20px;
+  }
+
+  .intro__registration-requires {
+    font-size: 15px;
+  }
+
+  .intro__registration-about {
+    font-size: 15px;
+  }
+
+  .intro__title {
+    padding-right: 10px;
+  }
+
+  .nav__toggle {
+    margin-top: 200px;
+  }
+}
+/*# sourceMappingURL=app.css.map */
