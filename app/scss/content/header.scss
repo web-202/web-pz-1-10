@@ -1,0 +1,122 @@
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1d1d;
+    padding: 10px 20px;
+    padding-right: 45%;
+    width: 100%; 
+  }
+  
+  .container {
+  width: 100%; 
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: 2px solid #c61f7b;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 120px;
+  display: inline-block;
+}
+  .logo img {
+    height: 40px;
+    vertical-align: middle;
+  }
+  
+  .menu-items {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  
+  .dropbtn {
+    text-decoration: none;
+    color: rgb(11, 10, 10);
+    font-weight: bold;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2f0707;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(247, 238, 238, 0.2);
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #8f1d63;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #bc2a4e;
+  }
+  
+  button {
+    background-color: #c61f7b;
+    color: #3c3939;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+  }
+  
+  #searchForm {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    float: right;
+  }
+  
+  #searchForm input[type="text"] {
+    padding: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+  }
+  
+  #searchForm button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1d1d;
+    padding: 10px 0;
+  }
+  
+  .logo img {
+    height: 40px;
+    vertical-align: middle;
+  }
+  
+  .menu-items {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+  }
+  
+  a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
