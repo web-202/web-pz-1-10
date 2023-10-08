@@ -50,8 +50,258 @@ table {
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+  .header {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, 25px);
+  }
+
+  .gitNames {
+    padding-left: 10px;
+  }
+
+  .searGH {
+    width: 90px;
+    margin-top: 20px;
+  }
+
+  .main {
+    margin-top: 15px;
+  }
+
+  .mainTitle {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+  .mainSubTitle {
+    font-size: 10px;
+    margin-left: 15px;
+    margin-top: 10px;
+    height: 100px;
+  }
+
+  .login {
+    font-size: 10px;
+  }
+
+  .loginText {
+    font-size: 7px;
+  }
+
+  .submit {
+    font-size: 10px;
+  }
+}
 /* No media query for `xs` since this is the default in Bootstrap*/
 /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .header {
+    font-size: 70%;
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .logo {
+    width: 4%;
+    height: 4%;
+  }
+
+  .gitNames {
+    margin-left: 1%;
+    margin-top: 0.5%;
+  }
+
+  .searGH {
+    font-size: 80%;
+  }
+
+  .siBut {
+    font-size: 90%;
+  }
+
+  .main {
+    margin-top: 5%;
+  }
+
+  .mainTitle {
+    margin-top: 10%;
+    font-size: 190%;
+    margin-left: 45%;
+    width: 50%;
+  }
+
+  .mainSubTitle {
+    font-size: 70%;
+    margin-top: 5%;
+    margin-left: 20%;
+  }
+
+  .login {
+    font-size: 70%;
+    margin-top: 300%;
+    width: 85%;
+  }
+
+  .loginText {
+    font-size: 45%;
+  }
+
+  .submit {
+    font-size: 70%;
+    height: 20%;
+  }
+}
 /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .header {
+    font-size: 80%;
+  }
+
+  .gitNames {
+    padding-left: 2%;
+  }
+
+  .mainTitle {
+    font-size: 260%;
+  }
+
+  .mainSubTitle {
+    font-size: 80%;
+  }
+
+  .login {
+    font-size: 80%;
+  }
+
+  .loginText {
+    font-size: 60%;
+  }
+
+  .submit {
+    font-size: 80%;
+  }
+}
 /*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .header {
+    font-size: 100%;
+  }
+
+  .mainTitle {
+    font-size: 300%;
+  }
+
+  .mainSubTitle {
+    font-size: 100%;
+  }
+
+  .login {
+    font-size: 100%;
+  }
+
+  .loginText {
+    font-size: 70%;
+  }
+
+  .submit {
+    font-size: 75%;
+    padding: 1px;
+    height: 10%;
+  }
+}
 /*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .header {
+    font-size: 120%;
+  }
+
+  .mainTitle {
+    font-size: 400%;
+  }
+
+  .login {
+    font-size: 120%;
+    height: 330px;
+  }
+
+  .submit {
+    font-size: 120%;
+    height: 20%;
+  }
+}
+body {
+  background-color: #2b3137;
+  color: white;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #24292f;
+  font-family: sans-serif;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.searGH {
+  background-color: #3f4448;
+  color: #b6b8ba;
+  border-radius: 5px;
+}
+
+.siBut {
+  background-color: #1e2227;
+  color: #ffffff;
+  border: 1px solid #fafbfc;
+  border-radius: 5px;
+}
+
+.main {
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2;
+}
+
+.login {
+  background-color: #fafbfc;
+  color: #040303;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #bab6b6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.submit {
+  background-color: #2fc151;
+  color: #fafbfc;
+  padding: 4px 2px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container {
+  padding: 16px;
+}

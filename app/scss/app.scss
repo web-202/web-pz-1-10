@@ -1,3 +1,60 @@
 @import "variables";
 @import "reset";
 @import "media-query";
+body{
+    background-color:#2b3137;
+    color: white;
+    font-family: sans-serif;
+}
+header{
+    background-color: #24292f;
+    font-family: sans-serif;
+    display: inline-flex;
+
+}
+
+.gitNames{
+}
+
+
+.searGH{
+    background-color: #3f4448;
+    color: #b6b8ba;
+    border-radius: 5px;
+}
+.siBut{
+    background-color:#1e2227;
+    color: #ffffff;
+    border: 1px solid #fafbfc;
+    border-radius: 5px;
+}
+.main{
+    columns: 2;
+}
+.login {
+    background-color: #fafbfc;
+    color: #040303;
+    border-radius: 10px;
+    display: flex;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #bab6b6;
+    box-sizing: border-box;
+}
+.submit {
+    background-color: #2fc151;
+    color: #fafbfc;
+    padding: 4px 2px;
+    margin: 4px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container {
+    padding: 16px;
+}
