@@ -32,5 +32,9 @@
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^9.0.2",
     "sass": "^1.41.1"
+  },
+  "dependencies": {
+    "postcss": "^8.4.31",
+    "rx": "^4.1.0"
   }
 }
