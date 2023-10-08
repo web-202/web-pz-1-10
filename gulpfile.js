@@ -14,9 +14,9 @@ const autoprefixer = require('gulp-autoprefixer');
 gulp.task('sass', function () {
   return gulp.src('app/scss/app.scss')
     .pipe(sass())
-    .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
+    .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(gulp.dest('app/css'))
-    .pipe(browserSync.reload({stream: true}))
+    .pipe(browserSync.reload({ stream: true }))
 });
 
 gulp.task('browser-sync', function () {
@@ -47,7 +47,7 @@ gulp.task('js-prod', function () {
 
 gulp.task('code', function () {
   return gulp.src('app/*.html')
-    .pipe(browserSync.reload({stream: true}))
+    .pipe(browserSync.reload({ stream: true }))
 });
 
 
@@ -60,7 +60,7 @@ gulp.task('img', function () {
     .pipe(cache(imagemin({
       interlaced: true,
       progressive: true,
-      svgoPlugins: [{removeViewBox: false}],
+      svgoPlugins: [{ removeViewBox: false }],
       use: [pngquant()]
     }))/**/)
     .pipe(gulp.dest('dist/img'));

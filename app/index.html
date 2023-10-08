@@ -1,14 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+  <meta name="viewport" content="width=1400" />
   <title>PZ_1_10</title>
-  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="./css/app.css">
 </head>
-<body>
 
-<script src="js/bundle.js"></script>
+<body>
+  <header class="head">
+    <div class="head__logo">
+      <img class="head__logo-image" src="./img/github.svg" alt="GitHub Logo">
+    </div>
+
+    <nav class="head__links">
+
+      <ul class="head__links-ul">
+        <li class="head__links-li"><a href="#">Why GitHub?<span class="head__links-naprav">&#709;</span></a></li>
+        <li class="head__links-li"><a href="#">Team</a></li>
+        <li class="head__links-li"><a href="#">Enterprise</a></li>
+        <li class="head__links-li"><a href="#">Explore<span class="head__links-naprav">&#709;</span></a></li>
+        <li class="head__links-li"><a href="#">Marketplace</a></li>
+        <li class="head__links-li"><a href="#">Pricing<span class="head__links-naprav">&#709;</span></a></li>
+      </ul>
+
+    </nav>
+
+    <div class="head__auth-button">
+      <div class="head__auth-button-buttons">
+      <input class="head__auth-button-input" type="text" placeholder="Search Github">
+      
+        <button class="head__auth-button-btnIn">Sign In</button>
+        <button class="head__auth-button-btnUp">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="content__left">
+      <h1 class="content__left-title">Build for developers</h1>
+      <p class="content__left-title__under">GitHub is a development platform inspired by the way you work. From <a
+          class="content__left-title__under-link" href="#">open source</a> to <a class="content__left-title__under-link"
+          href="#">business</a>, you can host and review
+        code, manage projects, and build software alongside 50 million developers.</p>
+    </div>
+
+    <div class="content__right">
+      <form class="auth-form">
+        <div class="auth-form__field">
+          <label for="username" class="auth-form__label">Username</label>
+          <input type="text" id="username" class="auth-form__input" name="username">
+        </div>
+
+        <div class="auth-form__field">
+          <label for="email" class="auth-form__label">Email</label>
+          <input type="email" id="email" class="auth-form__input" name="email">
+        </div>
+
+        <div class="auth-form__field">
+          <label for="password" class="auth-form__label">Password</label>
+          <input type="password" id="password" class="auth-form__input" name="password">
+        </div>
+
+        <div class="auth-form__first-text">
+          <p class="auth-form__first-text__p">Make sure it's at least 15 characters OR at least 8 characters including a
+            number and a lowercase letter. <a href="#">Learn more.</a></p>
+        </div>
+
+        <button class="auth-form__button">Sign Up for GitHub</button>
+
+        <div class="auth-form__second-text">
+          <p class="auth-form__second-text__p">By clicking "Sign up for GitHub", you agree to our <a href="#">Terms of
+              Service</a> and
+            <a href="#">Privacy Statement</a>. We'll occasionally send you
+            account related emails.
+          </p>
+        </div>
+      </form>
+    </div>
+  </main>
 
 </body>
+
 </html>
