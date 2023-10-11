@@ -1,0 +1,19 @@
+.nav__item{
+    display: inline;
+    margin-top: 100px;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: opacity 500ms ease;
+}
+.nav__item .search{
+    background-color: #3f4448;
+    color: #b6b8ba;
+    border-radius: 5px;
+    margin-left: 0px;
+}
+.nav__item .blackButton{
+    background-color:#24292f;
+    color: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}

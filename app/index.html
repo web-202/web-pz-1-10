@@ -5,9 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
   <title>PZ_1_10</title>
   <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/scss" href="scss/media-query.scss">
+
 </head>
 <body>
+  <header class="header">
+    <img class="logo" src="./img/logo.jpg">
+    <ul class="nav">
+      <li class="nav__item">Why GitHub?</li>
+      <li class="nav__item">Team</li>
+      <li class="nav__item">Enterprise</li> 
+      <li class="nav__item">Explore</li>
+      <li class="nav__item">Marketplace</li>
+      <li class="nav__item">Pricing</li>
+      <li class="nav__item"><input class="search"  placeholder="Search GitHub"></li>
+      <li class="nav__item">Sing in</li>
+      <li class="nav__item"><button class="blackButton">Sing up</button></li>
+    </ul>
+    
+    
+   
+    
+  </header>
+  <div class="intro">
+    <div class="intro__text">
+      <h2 class="intro__title">Built for <br> developers</h2>
+      <h6 class="intro__subtitle">GitHub is a development platform inspired by the 
+        way you work. From open source to business, you 
+        can host and review code, manage projects, and 
+        build software alongside 50 million developers.</h6>
+    </div>
+    
+    <form class="intro__login">
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input class="intro__input" type="text"  name="uname" required>
 
+        <label for="uname"><b>Email</b></label>
+        <input class="intro__input" type="text"  name="uname" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input class="intro__input" type="password"  name="psw" required>
+        <div class="intro__login-about">
+          Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter. Learn more.
+        </div>
+        <button class="intro__submit">Sign up for GitHub</button>
+        <div class="intro__login-about">
+          By clicking "Sign up for GitHub", you agree to our Terms of Service and Privacy Statement. We'll occasionally send you account related emails.
+        </div>
+      </div>
+    
+    
+    </form>
+  </div>
 <script src="js/bundle.js"></script>
 
 </body>
