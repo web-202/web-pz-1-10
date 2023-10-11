@@ -49,9 +49,321 @@ table {
   border-spacing: 0;
 }
 
+html, body {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main {
+  height: 65px;
+}
+.main .menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 65px;
+  background-color: #323232;
+}
+.main .menu__logo {
+  height: 50px;
+  width: 45px;
+  margin: 5px 5px;
+  margin-left: 75px;
+}
+.main .menu__shao-sing {
+  font-size: 15px;
+  color: aliceblue;
+  border: 0px;
+  background-color: #323232;
+  width: 75px;
+  height: 30px;
+  margin: 20px 5px;
+  border-radius: 5px;
+}
+.main .menu__shao-sing:hover {
+  background-color: #e3e5e7;
+}
+.main .menu__shao-sing-up {
+  font-size: 15px;
+  color: aliceblue;
+  background-color: #323232;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  width: 75px;
+  height: 30px;
+  margin: 20px 5px;
+  margin-right: 75px;
+}
+.main .menu__shao-sing-up:hover {
+  background-color: #e3e5e7;
+}
+.main .menu__search {
+  height: 25px;
+  border-radius: 5px;
+  margin: 20px;
+  background-color: #323232;
+  border: 1.5px solid white;
+  margin-right: 5px;
+}
+.main .menu__search:hover {
+  background-color: #e3e5e7;
+}
+.main nav {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.main nav ul {
+  list-style: none;
+  margin-left: 25px;
+  padding: 0;
+  margin: 25px 10px;
+}
+.main nav ul li {
+  font-size: 15px;
+  display: inline-block;
+}
+.main nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  margin: 5px 8px;
+}
+.main nav ul li a:hover {
+  background-color: #e3e5e7;
+}
+
+.shao-page {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.fon {
+  background-image: url("https://krot.info/uploads/posts/2020-10/1603495624_49-p-serii-fon-dlya-prezentatsii-59.jpg");
+  width: 100%;
+  height: 677px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.fon__text {
+  width: 48%;
+  color: aliceblue;
+}
+.fon__text p {
+  font-size: 25px;
+  margin: -135px 145px;
+}
+.fon__text p:hover {
+  background-color: #959596;
+}
+.fon__text h2 {
+  color: aliceblue;
+  font-size: 65px;
+  margin: 145px;
+}
+.fon__text h2:hover {
+  background-color: #959596;
+}
+.fon__text a {
+  color: aliceblue;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.fon__forms {
+  margin: -300px 900px;
+  width: 30%;
+  background-color: aliceblue;
+  height: 70%;
+  border-radius: 10px;
+}
+.fon__form {
+  padding-top: 40px;
+}
+.fon__form p {
+  color: black;
+  font-size: 12px;
+  width: 325px;
+  margin-left: 65px;
+}
+.fon__form a {
+  color: #0b55bc;
+  text-decoration: none;
+  font-size: 12px;
+  display: inline-block;
+}
+.fon__input {
+  border: 1px solid #302f2f;
+  background-color: azure;
+  color: #000000;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 300px;
+  height: 40px;
+  margin-left: 65px;
+}
+.fon__label {
+  color: black;
+  font-size: 20px;
+  margin-left: 65px;
+}
+.fon__button {
+  border-radius: 5px;
+  border: #40cc47;
+  background-color: #40cc47;
+  width: 300px;
+  height: 50px;
+  margin: 15px 0px;
+  margin-left: 65px;
+}
+.fon__button a {
+  font-size: 18px;
+  color: azure;
+}
+
 /* Extra small devices (portrait phones, less than 576px)*/
 /* No media query for `xs` since this is the default in Bootstrap*/
 /*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+  .menu {
+    width: 100%;
+  }
+  .menu__logo {
+    margin: 23px 5px;
+    margin-left: 5px;
+    height: 20px;
+    width: 20px;
+  }
+  .menu__shao-sing {
+    margin-top: 23px;
+    margin-right: -7px;
+    width: 45px;
+    height: 15px;
+    font-size: 10px;
+  }
+  .menu__shao-sing-up {
+    width: 50px;
+    height: 15px;
+    margin-right: 5px;
+    margin-top: 23px;
+    font-size: 10px;
+  }
+  .menu__search {
+    width: 50px;
+    height: 13px;
+    margin-top: 23px;
+    font-size: 7px;
+    margin-right: -5px;
+  }
+
+  nav ul {
+    margin: 20px 1px;
+  }
+  nav ul li a {
+    font-size: 10px;
+    margin: 3px;
+  }
+
+  .fon {
+    width: 100%;
+  }
+  .fon__text {
+    width: 60%;
+    margin: -100px;
+  }
+  .fon__text p {
+    font-size: 20px;
+    width: 70%;
+  }
+  .fon__text h2 {
+    font-size: 35px;
+  }
+  .fon h2 {
+    font-size: 40px;
+  }
+  .fon__forms {
+    margin: -270px 300px;
+    width: 40%;
+    height: 45%;
+  }
+  .fon__form {
+    padding-top: 15px;
+  }
+  .fon__form p {
+    font-size: 8px;
+    margin-left: 20px;
+    width: 150px;
+  }
+  .fon__form p a {
+    font-size: 8px;
+  }
+  .fon__input {
+    width: 130px;
+    height: 20px;
+    margin-left: 20px;
+  }
+  .fon__label {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .fon__button {
+    height: 20px;
+    width: 100px;
+    margin-left: 35px;
+  }
+  .fon__button a {
+    font-size: 8px;
+  }
+}
 /*Medium devices (tablets, 768px and up)*/
-/*Large devices (desktops, 992px and up)*/
-/*Extra large devices (large desktops, 1200px and up)*/
+@media screen and (max-width: 768px) and (min-width: 577px) {
+  .menu {
+    width: 100%;
+  }
+  .menu__logo {
+    margin: 3px 3px;
+    margin-left: 0px;
+  }
+  .menu__shao-sing {
+    margin: 20px 3px;
+    width: 65px;
+    height: 20px;
+  }
+  .menu__shao-sing-up {
+    width: 65px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  .menu__search {
+    width: 90px;
+    height: 20px;
+    margin-top: 20px;
+  }
+
+  nav ul {
+    margin: 25px 3px;
+  }
+  nav ul li a {
+    margin: 5px 3px;
+  }
+
+  .fon__text {
+    width: 60%;
+    margin: -80px;
+  }
+  .fon__text p {
+    font-size: 15px;
+  }
+  .fon h2 {
+    font-size: 30px;
+  }
+  .fon__forms {
+    margin: -200px 330px;
+    width: 55%;
+    height: 65%;
+  }
+}

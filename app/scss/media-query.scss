@@ -2,21 +2,186 @@
 /* No media query for `xs` since this is the default in Bootstrap*/
 
 /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
+@media (max-width: 576px) {
+    
+    .menu{
+        width:100%; 
+        &__logo{
+            margin: 23px 5px;
+            margin-left: 5px;
+            height: 20px;
+            width: 20px;
+        }
+        
+        &__shao-sing{
+            margin-top: 23px ;
+            margin-right: -7px;
+            width: 45px;
+            height: 15px;
+            font-size: 10px;
 
+        }
+        &__shao-sing-up{
+            width: 50px;
+            height: 15px;
+            margin-right: 5px;
+            margin-top: 23px ;
+            font-size: 10px;
+        }
+        &__search{
+            width: 50px;
+            height: 13px;
+            margin-top: 23px ;
+            font-size: 7px;
+            margin-right: -5px;
+        }
+        
+    
+    }
+    nav{
+        ul{
+            margin: 20px 1px;
+            li{
+                a{
+                   font-size: 10px;
+                   margin: 3px;
+                   
+                }
+            }
+        }
+    }
+    
+
+    
+        .fon{
+            width: 100%;
+           
+            &__text{
+                width: 60%;
+                margin:  -100px;
+                p{
+                    font-size: 20px;
+                    width: 70%;
+                    
+                }
+                h2{
+                    font-size: 35px;
+                   
+                }
+            }
+            h2{
+                font-size: 40px;
+            }
+    
+
+            &__forms{
+            margin: -270px 300px;
+            width: 40%;
+            height: 45%;
+           }
+
+            &__form{
+                padding-top: 15px;
+                
+                p{
+                    font-size: 8px;
+                    margin-left: 20px;
+                    width: 150px ;
+                    a{
+                        font-size: 8px;
+                    }
+                }
+            
+               
+            }
+            &__input{
+                width: 130px;
+                height: 20px;
+                margin-left: 20px;
+            }
+            &__label{
+                font-size: 14px;
+                margin-left: 20px;
+            }
+            &__button{
+                height: 20px;
+                width: 100px;
+                margin-left:35px ;
+                a{
+                    font-size:8px ;
+                }
+            }
+
+            
+        }
+    
+    
+    
 }
 
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 577px) {
+  
+  
+    .menu{
+    width:100%; 
 
-}
+      &__logo{
+        margin: 3px 3px;
+        margin-left: 0px;
+      }
 
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
+      &__shao-sing{
+        margin: 20px 3px;
+        width: 65px;
+        height: 20px;
+    }
+    &__shao-sing-up{
+        width: 65px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    &__search{
+        width: 90px;
+        height: 20px;
+        margin-top: 20px ;
+    }
+    
 
-}
+  }
+  nav{
+    ul{
+        margin: 25px 3px;
+        li{
+            a{
+                margin: 5px 3px;
+            }
+        }
+    }
+  }
 
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
 
-}
+  
+    .fon{
+        &__text{
+            width: 60%;
+            margin:  -80px;
+            p{
+                font-size: 15px;
+                
+            }
+        }
+        h2{
+            font-size: 30px;
+            
+        }
+
+    &__forms{
+        margin: -200px 330px;
+        width: 55%;
+        height: 65%;
+    }
+    }
+
+  }
+

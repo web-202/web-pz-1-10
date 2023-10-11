@@ -1,0 +1,93 @@
+html, body {
+    width: 100%;
+    overflow: hidden;
+}
+.main{
+    height: 65px;
+
+
+.menu{
+    display: flex;
+    height: 65px;
+    background-color: rgb(50, 50, 50);
+
+    &__logo{
+        height: 50px;
+        width: 45px;
+        margin: 5px 5px;
+        margin-left: 75px;
+    }
+
+    &__shao-sing{
+        font-size: 15px;
+        color: aliceblue;
+        border: 0px;
+        background-color:rgb(50, 50, 50) ;
+        width: 75px;
+        height: 30px;
+        margin: 20px 5px ;
+        border-radius: 5px;
+        &:hover {
+            background-color: #e3e5e7; 
+          }
+    }
+    &__shao-sing-up{
+        font-size: 15px;
+        color: aliceblue;
+        background-color:rgb(50, 50, 50) ;
+        border: 1.5px solid rgb(255, 255, 255) ;
+        border-radius: 5px;
+        width: 75px;
+        height: 30px;
+        margin: 20px 5px ;
+        margin-right: 75px;
+
+        &:hover {
+            background-color: #e3e5e7; 
+          }
+    }
+    &__search{
+        height: 25px;
+        border-radius: 5px;
+        margin: 20px;
+        background-color:rgb(50, 50, 50) ;
+        border: 1.5px solid rgb(255, 255, 255) ;
+        margin-right: 5px;
+       
+        
+        &:hover {
+            background-color: #e3e5e7; 
+          }
+        
+    }
+
+}
+nav{
+    flex: 1;
+
+    ul {
+        list-style: none;
+        margin-left: 25px;
+        padding: 0;
+        margin: 25px 10px;
+       
+        
+        li {
+            font-size: 15px;
+            display: inline-block;
+            
+            a{
+                text-decoration: none;
+                color: aliceblue;
+                margin: 5px 8px;
+                &:hover {
+                    background-color: #e3e5e7; 
+                  }
+            }   
+        }   
+    }
+}
+
+
+
+}
