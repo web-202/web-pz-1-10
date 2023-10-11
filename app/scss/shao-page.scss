@@ -1,99 +1,101 @@
 .shao-page{
     display: flex;
     width: 100%;
-    .fon{
-    background-image: url('https://krot.info/uploads/posts/2020-10/1603495624_49-p-serii-fon-dlya-prezentatsii-59.jpg');
-    width: 100%;
-    height: 677px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-      .text{
-        width: 48%;
-        color: aliceblue;
-        p{
-            font-size: 25px;
-            margin: -135px 145px;
-            &:hover {
-                background-color:  #959596; 
-              }
-        }
-        h2{
-            color: aliceblue;
-            font-size: 65px;
-            margin: 145px;
-            &:hover {
-                background-color: #959596; 
-              }
-
-        }
-        a{
-          color: aliceblue;
-          text-decoration:underline;
-          font-weight:bold;
-
-        }
-      }
-      .forms{
-         margin: -300px 900px;
-         width: 30%;
-         background-color: aliceblue;
-         height: 70%;
-         border-radius: 10px;
-          .form{ 
-           padding-top: 40px;
-           input{
-            border: 1px solid #302f2f;
-            background-color: azure;
-            color: #000000;
-            font-size: 18px;
-            border-radius: 5px;
-            width: 300px;
-            height: 40px;
-            margin-left: 65px;
-            
-         }
-         label{
-            color: rgb(0, 0, 0);
-            font-size: 20px;
-            margin-left: 65px;
-            
-            
-         }
-         p{
-            color: black;
-            font-size: 12px;
-            width: 325px;
-            margin-left: 65px;
-            
-            a{
-                color: rgb(11, 85, 188);
-                text-decoration: none;
-                font-size: 12px;
-                display: inline-block;
-                
-                
-                
-            }
-         }
-         .button{
-            border-radius: 5px;
-            border: #40cc47;
-            background-color: #40cc47;
-            width: 300px;
-            height: 50px;
-            margin: 15px 0px;
-            margin-left: 65px;
-
-            a{
-                font-size: 18px;
-                color: azure;
-                
-            }
-
-            
-         }
-          }
-      }
-    }  
+    
+  
 }
+.fon{
+  background-image: url('https://krot.info/uploads/posts/2020-10/1603495624_49-p-serii-fon-dlya-prezentatsii-59.jpg');
+  width: 100%;
+  height: 677px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    &__text{
+      width: 48%;
+      color: aliceblue;
+      p{
+        font-size: 25px;
+         margin: -135px 145px;
+            &:hover {
+            background-color:  #959596;
+            }
+      }
+      h2{
+        color: aliceblue;
+        font-size: 65px;
+        margin: 145px;
+          &:hover {
+            background-color: #959596; 
+            }
+        
+      }
+      a{
+        color: aliceblue;
+        text-decoration:underline;
+        font-weight:bold;
+        
+      }
+    }
+    &__forms{
+      margin: -300px 900px;
+      width: 30%;
+      background-color: aliceblue;
+      height: 70%;
+      border-radius: 10px;
+      
+    }
+    &__form{
+      padding-top: 40px;
+      p{
+        color: black;
+          font-size: 12px;
+          width: 325px;
+          margin-left: 65px; 
+       }
+      a{
+        color: rgb(11, 85, 188);
+        text-decoration: none;
+        font-size: 12px;
+        display: inline-block;
+      }
+    }
+    &__input{
+      border: 1px solid #302f2f;
+      background-color: azure;
+      color: #000000;
+      font-size: 18px;
+      border-radius: 5px;
+      width: 300px;
+      height: 40px;
+      margin-left: 65px;
+    }
+    &__label{
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+      margin-left: 65px;
+      p{
+
+      }
+    }
+    &__button{
+    border-radius: 5px;
+    border: #40cc47;
+    background-color: #40cc47;
+    width: 300px;
+    height: 50px;
+    margin: 15px 0px;
+    margin-left: 65px;  
+
+    a{
+    font-size: 18px;
+     color: azure;
+
+    }
+    }
+}
+  
+            
+              
+
+

@@ -4,19 +4,21 @@ html, body {
 }
 .main{
     height: 65px;
-}
-.logo{
-    height: 50px;
-    width: 45px;
-    margin: 5px 5px;
-    margin-left: 75px;
-}
+
+
 .menu{
     display: flex;
     height: 65px;
     background-color: rgb(50, 50, 50);
 
-    .shao-sing{
+    &__logo{
+        height: 50px;
+        width: 45px;
+        margin: 5px 5px;
+        margin-left: 75px;
+    }
+
+    &__shao-sing{
         font-size: 15px;
         color: aliceblue;
         border: 0px;
@@ -29,7 +31,7 @@ html, body {
             background-color: #e3e5e7; 
           }
     }
-    .shao-sing-up{
+    &__shao-sing-up{
         font-size: 15px;
         color: aliceblue;
         background-color:rgb(50, 50, 50) ;
@@ -44,7 +46,7 @@ html, body {
             background-color: #e3e5e7; 
           }
     }
-    .search{
+    &__search{
         height: 25px;
         border-radius: 5px;
         margin: 20px;
@@ -58,13 +60,13 @@ html, body {
           }
         
     }
+
 }
 nav{
     flex: 1;
 
     ul {
         list-style: none;
-        
         margin-left: 25px;
         padding: 0;
         margin: 25px 10px;
@@ -87,3 +89,5 @@ nav{
 }
 
 
+
+}

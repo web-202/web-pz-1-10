@@ -57,15 +57,7 @@ html, body {
 .main {
   height: 65px;
 }
-
-.logo {
-  height: 50px;
-  width: 45px;
-  margin: 5px 5px;
-  margin-left: 75px;
-}
-
-.menu {
+.main .menu {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -73,7 +65,13 @@ html, body {
   height: 65px;
   background-color: #323232;
 }
-.menu .shao-sing {
+.main .menu__logo {
+  height: 50px;
+  width: 45px;
+  margin: 5px 5px;
+  margin-left: 75px;
+}
+.main .menu__shao-sing {
   font-size: 15px;
   color: aliceblue;
   border: 0px;
@@ -83,10 +81,10 @@ html, body {
   margin: 20px 5px;
   border-radius: 5px;
 }
-.menu .shao-sing:hover {
+.main .menu__shao-sing:hover {
   background-color: #e3e5e7;
 }
-.menu .shao-sing-up {
+.main .menu__shao-sing-up {
   font-size: 15px;
   color: aliceblue;
   background-color: #323232;
@@ -97,10 +95,10 @@ html, body {
   margin: 20px 5px;
   margin-right: 75px;
 }
-.menu .shao-sing-up:hover {
+.main .menu__shao-sing-up:hover {
   background-color: #e3e5e7;
 }
-.menu .search {
+.main .menu__search {
   height: 25px;
   border-radius: 5px;
   margin: 20px;
@@ -108,32 +106,31 @@ html, body {
   border: 1.5px solid white;
   margin-right: 5px;
 }
-.menu .search:hover {
+.main .menu__search:hover {
   background-color: #e3e5e7;
 }
-
-nav {
+.main nav {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
-nav ul {
+.main nav ul {
   list-style: none;
   margin-left: 25px;
   padding: 0;
   margin: 25px 10px;
 }
-nav ul li {
+.main nav ul li {
   font-size: 15px;
   display: inline-block;
 }
-nav ul li a {
+.main nav ul li a {
   text-decoration: none;
   color: aliceblue;
   margin: 5px 8px;
 }
-nav ul li a:hover {
+.main nav ul li a:hover {
   background-color: #e3e5e7;
 }
 
@@ -144,7 +141,8 @@ nav ul li a:hover {
   display: flex;
   width: 100%;
 }
-.shao-page .fon {
+
+.fon {
   background-image: url("https://krot.info/uploads/posts/2020-10/1603495624_49-p-serii-fon-dlya-prezentatsii-59.jpg");
   width: 100%;
   height: 677px;
@@ -152,41 +150,53 @@ nav ul li a:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
-.shao-page .fon .text {
+.fon__text {
   width: 48%;
   color: aliceblue;
 }
-.shao-page .fon .text p {
+.fon__text p {
   font-size: 25px;
   margin: -135px 145px;
 }
-.shao-page .fon .text p:hover {
+.fon__text p:hover {
   background-color: #959596;
 }
-.shao-page .fon .text h2 {
+.fon__text h2 {
   color: aliceblue;
   font-size: 65px;
   margin: 145px;
 }
-.shao-page .fon .text h2:hover {
+.fon__text h2:hover {
   background-color: #959596;
 }
-.shao-page .fon .text a {
+.fon__text a {
   color: aliceblue;
   text-decoration: underline;
   font-weight: bold;
 }
-.shao-page .fon .forms {
+.fon__forms {
   margin: -300px 900px;
   width: 30%;
   background-color: aliceblue;
   height: 70%;
   border-radius: 10px;
 }
-.shao-page .fon .forms .form {
+.fon__form {
   padding-top: 40px;
 }
-.shao-page .fon .forms .form input {
+.fon__form p {
+  color: black;
+  font-size: 12px;
+  width: 325px;
+  margin-left: 65px;
+}
+.fon__form a {
+  color: #0b55bc;
+  text-decoration: none;
+  font-size: 12px;
+  display: inline-block;
+}
+.fon__input {
   border: 1px solid #302f2f;
   background-color: azure;
   color: #000000;
@@ -196,24 +206,12 @@ nav ul li a:hover {
   height: 40px;
   margin-left: 65px;
 }
-.shao-page .fon .forms .form label {
+.fon__label {
   color: black;
   font-size: 20px;
   margin-left: 65px;
 }
-.shao-page .fon .forms .form p {
-  color: black;
-  font-size: 12px;
-  width: 325px;
-  margin-left: 65px;
-}
-.shao-page .fon .forms .form p a {
-  color: #0b55bc;
-  text-decoration: none;
-  font-size: 12px;
-  display: inline-block;
-}
-.shao-page .fon .forms .form .button {
+.fon__button {
   border-radius: 5px;
   border: #40cc47;
   background-color: #40cc47;
@@ -222,7 +220,7 @@ nav ul li a:hover {
   margin: 15px 0px;
   margin-left: 65px;
 }
-.shao-page .fon .forms .form .button a {
+.fon__button a {
   font-size: 18px;
   color: azure;
 }
@@ -231,31 +229,30 @@ nav ul li a:hover {
 /* No media query for `xs` since this is the default in Bootstrap*/
 /*Small devices (landscape phones, 576px and up)*/
 @media (max-width: 576px) {
-  .logo {
+  .menu {
+    width: 100%;
+  }
+  .menu__logo {
     margin: 23px 5px;
     margin-left: 5px;
     height: 20px;
     width: 20px;
   }
-
-  .menu {
-    width: 100%;
-  }
-  .menu .shao-sing {
+  .menu__shao-sing {
     margin-top: 23px;
     margin-right: -7px;
     width: 45px;
     height: 15px;
     font-size: 10px;
   }
-  .menu .shao-sing-up {
+  .menu__shao-sing-up {
     width: 50px;
     height: 15px;
     margin-right: 5px;
     margin-top: 23px;
     font-size: 10px;
   }
-  .menu .search {
+  .menu__search {
     width: 50px;
     height: 13px;
     margin-top: 23px;
@@ -271,78 +268,77 @@ nav ul li a:hover {
     margin: 3px;
   }
 
-  .shao-page .fon {
+  .fon {
     width: 100%;
   }
-  .shao-page .fon .text {
-    width: 50%;
+  .fon__text {
+    width: 60%;
     margin: -100px;
   }
-  .shao-page .fon .text p {
-    font-size: 10px;
-    width: 55%;
+  .fon__text p {
+    font-size: 20px;
+    width: 70%;
   }
-  .shao-page .fon .text h2 {
+  .fon__text h2 {
     font-size: 35px;
   }
-  .shao-page .fon h2 {
-    font-size: 10px;
+  .fon h2 {
+    font-size: 40px;
   }
-  .shao-page .fon .forms {
-    margin: -200px 200px;
+  .fon__forms {
+    margin: -270px 300px;
     width: 40%;
     height: 45%;
   }
-  .shao-page .fon .forms .form {
+  .fon__form {
     padding-top: 15px;
   }
-  .shao-page .fon .forms .form input {
-    width: 130px;
-    height: 20px;
-    margin-left: 20px;
-  }
-  .shao-page .fon .forms .form label {
-    font-size: 14px;
-    margin-left: 20px;
-  }
-  .shao-page .fon .forms .form p {
+  .fon__form p {
     font-size: 8px;
     margin-left: 20px;
     width: 150px;
   }
-  .shao-page .fon .forms .form p a {
+  .fon__form p a {
     font-size: 8px;
   }
-  .shao-page .fon .forms .form .button {
+  .fon__input {
+    width: 130px;
+    height: 20px;
+    margin-left: 20px;
+  }
+  .fon__label {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .fon__button {
     height: 20px;
     width: 100px;
     margin-left: 35px;
   }
-  .shao-page .fon .forms .form .button a {
+  .fon__button a {
     font-size: 8px;
   }
 }
 /*Medium devices (tablets, 768px and up)*/
 @media screen and (max-width: 768px) and (min-width: 577px) {
-  .logo {
-    margin: 3px 3px;
-    margin-left: 0px;
-  }
-
   .menu {
     width: 100%;
   }
-  .menu .shao-sing {
+  .menu__logo {
+    margin: 3px 3px;
+    margin-left: 0px;
+  }
+  .menu__shao-sing {
     margin: 20px 3px;
     width: 65px;
     height: 20px;
   }
-  .menu .shao-sing-up {
+  .menu__shao-sing-up {
     width: 65px;
     height: 20px;
     margin-right: 5px;
   }
-  .menu .search {
+  .menu__search {
     width: 90px;
     height: 20px;
     margin-top: 20px;
@@ -355,18 +351,18 @@ nav ul li a:hover {
     margin: 5px 3px;
   }
 
-  .shao-page .fon .text {
-    width: 70%;
-    margin: -100px;
+  .fon__text {
+    width: 60%;
+    margin: -80px;
   }
-  .shao-page .fon .text p {
+  .fon__text p {
     font-size: 15px;
   }
-  .shao-page .fon h2 {
-    font-size: 20px;
+  .fon h2 {
+    font-size: 30px;
   }
-  .shao-page .fon .forms {
-    margin: -250px 330px;
+  .fon__forms {
+    margin: -200px 330px;
     width: 55%;
     height: 65%;
   }
