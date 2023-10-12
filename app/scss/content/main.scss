@@ -1,0 +1,112 @@
+.content {
+  height: 100%;
+  width: 1400px;
+  background-image: $content-bg-image;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Tahoma;
+
+  &__left {
+    flex: 1;
+    color: $content-text-color;
+    padding: 20px 0 0 144px;
+
+    &-title {
+      font-size: 60px;
+      padding-bottom: 20px;
+      width: 250px;
+    }
+    &-link {
+      color: $content-text-color;
+    }
+
+    &-subtitle {
+      color: rgb(181, 185, 187);
+      font-size: 20px;
+      width: 471px;
+      line-height: 30px;
+    }
+  }
+
+  &__right {
+    flex: 1;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin: 90px 300px 68px 30px;
+
+    &-field {
+      margin-bottom: 15px;
+    }
+
+    &-label {
+      font-size: 14px;
+      line-height: 34px;
+      color: $auth-form-text-color;
+    }
+
+    &-input {
+      width: $auth-form-input-width;
+      padding: $auth-form-input-padding;
+      border: 1px solid $auth-form-input-border-color;
+      border-radius: 5px;
+    }
+
+    &-password-hint {
+      color: $auth-form-first-text-color;
+      font-size: $auth-form-first-text-font-size;
+      margin-bottom: $auth-form-first-text-margin-bottom;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    &-agreement-text {
+      color: $auth-form-second-text-color;
+      font-size: $auth-form-second-text-font-size;
+      margin-bottom: $auth-form-second-text-margin-bottom;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    &-signup-button {
+      margin: 0 auto;
+      background-color: $auth-form-button-bg-color;
+      color: #fff;
+      border: none;
+      width: $auth-form-button-width;
+      height: $auth-form-button-height;
+      border-radius: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: $auth-form-button-font-size;
+      margin-bottom: 30px;
+
+      &:hover {
+        background &:hover {
+          background-color: $auth-form-button-hover-bg-color;
+        }
+      }
+    }
+
+    &-form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 10px;
+      width: 409px;
+      height: 410px;
+
+      a {
+        color: rgb(90, 150, 228);
+      }
+    }
+  }
+}
