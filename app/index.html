@@ -9,30 +9,28 @@
 </head>
 
 <body>
-  <header class="head">
-    <div class="head__logo">
-      <img class="head__logo-image" src="./img/github.svg" alt="GitHub Logo">
+  <header class="page-header">
+    <div class="page-header__logo">
+      <img class="page-header__logo-image" src="./img/github.svg" alt="GitHub Logo">
     </div>
 
-    <nav class="head__links">
-
-      <ul class="head__links-ul">
-        <li class="head__links-li"><a href="#">Why GitHub?<span class="head__links-naprav">&#709;</span></a></li>
-        <li class="head__links-li"><a href="#">Team</a></li>
-        <li class="head__links-li"><a href="#">Enterprise</a></li>
-        <li class="head__links-li"><a href="#">Explore<span class="head__links-naprav">&#709;</span></a></li>
-        <li class="head__links-li"><a href="#">Marketplace</a></li>
-        <li class="head__links-li"><a href="#">Pricing<span class="head__links-naprav">&#709;</span></a></li>
+    <nav class="page-header__links">
+      <ul class="page-header__links-list">
+        <li class="page-header__links-item"><a href="#">Why GitHub?<span>&#709;</span></a></li>
+        <li class="page-header__links-item"><a href="#">Team</a></li>
+        <li class="page-header__links-item"><a href="#">Enterprise</a></li>
+        <li class="page-header__links-item"><a href="#">Explore<span>&#709;</span></a></li>
+        <li class="page-header__links-item"><a href="#">Marketplace</a></li>
+        <li class="page-header__links-item"><a href="#">Pricing<span>&#709;</span></a></li>
       </ul>
-
     </nav>
 
-    <div class="head__auth-button">
-      <div class="head__auth-button-buttons">
-      <input class="head__auth-button-input" type="text" placeholder="Search Github">
-      
-        <button class="head__auth-button-btnIn">Sign In</button>
-        <button class="head__auth-button-btnUp">Sign Up</button>
+
+    <div class="page-header__auth">
+      <div class="page-header__auth-buttons">
+        <input class="page-header__auth-search" type="text" placeholder="Search Github">
+        <button class="page-header__auth-button-signin">Sign In</button>
+        <button class="page-header__auth-button-signup">Sign Up</button>
       </div>
     </div>
   </header>
@@ -40,47 +38,46 @@
   <main class="content">
     <div class="content__left">
       <h1 class="content__left-title">Build for developers</h1>
-      <p class="content__left-title__under">GitHub is a development platform inspired by the way you work. From <a
-          class="content__left-title__under-link" href="#">open source</a> to <a class="content__left-title__under-link"
-          href="#">business</a>, you can host and review
-        code, manage projects, and build software alongside 50 million developers.</p>
+      <p class="content__left-subtitle">GitHub is a development platform inspired by the way you work. From <a
+          class="content__left-link" href="#">open source</a> to <a class="content__left-link" href="#">business</a>,
+        you can host and review code, manage projects, and build software alongside 50 million developers.</p>
     </div>
 
     <div class="content__right">
-      <form class="auth-form">
-        <div class="auth-form__field">
-          <label for="username" class="auth-form__label">Username</label>
-          <input type="text" id="username" class="auth-form__input" name="username">
+      <form class="content__right-form">
+        <div class="content__right-field">
+          <label for="username" class="content__right-label">Username</label>
+          <input type="text" id="username" class="content__right-input" name="username">
         </div>
 
-        <div class="auth-form__field">
-          <label for="email" class="auth-form__label">Email</label>
-          <input type="email" id="email" class="auth-form__input" name="email">
+        <div class="content__right-field">
+          <label for="email" class="content__right-label">Email</label>
+          <input type="email" id="email" class="content__right-input" name="email">
         </div>
 
-        <div class="auth-form__field">
-          <label for="password" class="auth-form__label">Password</label>
-          <input type="password" id="password" class="auth-form__input" name="password">
+        <div class="content__right-field">
+          <label for="password" class="content__right-label">Password</label>
+          <input type="password" id="password" class="content__right-input" name="password">
         </div>
 
-        <div class="auth-form__first-text">
-          <p class="auth-form__first-text__p">Make sure it's at least 15 characters OR at least 8 characters including a
-            number and a lowercase letter. <a href="#">Learn more.</a></p>
+        <div class="content__right-password-hint">
+          <p class="content__right-password-hint-text">Make sure it's at least 15 characters OR at least 8
+            characters including a number and a lowercase letter. <a href="#">Learn more.</a></p>
         </div>
 
-        <button class="auth-form__button">Sign Up for GitHub</button>
+        <button class="content__right-signup-button">Sign Up for GitHub</button>
 
-        <div class="auth-form__second-text">
-          <p class="auth-form__second-text__p">By clicking "Sign up for GitHub", you agree to our <a href="#">Terms of
-              Service</a> and
-            <a href="#">Privacy Statement</a>. We'll occasionally send you
-            account related emails.
-          </p>
+        <div class="content__right-agreement">
+          <p class="content__right-agreement-text">By clicking "Sign up for GitHub," you agree to our <a href="#">Terms
+              of
+              Service</a> and <a href="#">Privacy Statement</a>. We'll occasionally send you account
+            related emails.</p>
         </div>
       </form>
     </div>
   </main>
 
 </body>
+
 
 </html>

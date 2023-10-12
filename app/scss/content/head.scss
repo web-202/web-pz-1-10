@@ -1,107 +1,106 @@
-.head {
+.page-header {
+  display: flex;
+  flex-direction: row;
+  width: 1400px;
+  height: 70px;
+  background-color: $primary-bg-color;
+
+  &__logo {
+    padding: 17px 15px 25px 9px;
+
+    &-image {
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      background-color: #fff;
+      border-radius: 100%;
+    }
+  }
+
+  &__links {
     display: flex;
     flex-direction: row;
-    width: 1400px;
-    height: 70px;
-    background-color: $primary-bg-color;
-  
-    &__logo {
-      padding: 17px 15px 25px 9px;
-  
-      &-image {
-        align-items: center;
-        width: 35px;
-        height: 35px;
-        background-color: #fff;
-        border-radius: 100%;
-      }
-    }
-  
-    &__links {
+    justify-content: center;
+    align-items: center;
+
+    &-list {
       display: flex;
       flex-direction: row;
-      justify-content: center;
-      align-items: center;
-  
-      &-ul {
-        display: flex;
-        flex-direction: row;
-        font-family: Tahoma;
-        font-size: 15px;
-      }
-  
-      &-li {
-        padding-left: 10px;
-      }
-  
-      &-naprav {
-        color: grey;
-        padding-left: 2px;
-      }
-  
-      a {
-        text-decoration: none;
-        color: $text-color;
-  
-        &:hover {
-          cursor: pointer;
-        }
-      }
+      font-family: Tahoma;
+      font-size: 15px;
     }
-  
-    &__auth-button {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      margin-left: 420px;
-  
-      &--input {
-        background-color: rgb(48, 52, 56);
-        width: 232px;
-        height: 30px;
-        border-radius: 5px;
-        border: none;
-        margin-right: 5px;
-        color: white;
-  
-        &::placeholder {
-          color: $input-placeholder-color;
-          padding-left: 8px;
-          font-size: 15px;
-        }
-      }
-  
-      &-btnIn {
-        border: 0;
-        background-color: $primary-bg-color;
-        color: $text-color;
-        font-size: 14px;
-  
-        &:hover {
-          cursor: pointer;
-          transform: scale(0.95);
-        }
-      }
-  
-      &-btnUp {
-        width: 69px;
-        height: 34px;
-        background-color: $primary-bg-color;
-        border: 1px solid white;
-        border-radius: 5px;
-        font-size: 14px;
-        color: $text-color;
-  
-        &:hover {
-          cursor: pointer;
-          transform: scale(0.95);
-        }
-      }
-  
-      &-buttons{
-        margin-left: 110px;
+
+    &-item {
+      padding-left: 10px;
+    }
+
+    &-icon {
+      color: grey;
+      padding-left: 2px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $text-color;
+
+      &:hover {
+        cursor: pointer;
       }
     }
   }
-  
+
+  &__auth {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 420px;
+
+    &-buttons{
+      margin-left: 65px;
+    }
+
+    &-search {
+      background-color: rgb(48, 52, 56);
+      width: 232px;
+      height: 30px;
+      border-radius: 5px;
+      border: none;
+      margin-right: 5px;
+      color: white;
+
+      &::placeholder {
+        color: $input-placeholder-color;
+        padding-left: 8px;
+        font-size: 15px;
+      }
+    }
+
+    &-button-signin {
+      border: 0;
+      background-color: $primary-bg-color;
+      color: $text-color;
+      font-size: 14px;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(0.95);
+      }
+    }
+
+    &-button-signup {
+      width: 69px;
+      height: 34px;
+      background-color: $primary-bg-color;
+      border: 1px solid white;
+      border-radius: 5px;
+      font-size: 14px;
+      color: $text-color;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(0.95);
+      }
+    }
+  }
+}
