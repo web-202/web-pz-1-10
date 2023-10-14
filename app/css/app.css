@@ -19,7 +19,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -49,12 +48,7 @@ table {
   border-spacing: 0;
 }
 
-/* Extra small devices (portrait phones, less than 576px)*/
-/* No media query for `xs` since this is the default in Bootstrap*/
-/*Small devices (landscape phones, 576px and up)*/
-/*Medium devices (tablets, 768px and up)*/
-/*Large devices (desktops, 992px and up)*/
-/*Extra large devices (large desktops, 1200px and up)*/
+
 .head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -69,10 +63,10 @@ table {
   height: 70px;
   background-color: #1b1f23;
 }
-.head__logo {
+.head_logo {
   padding: 17px 15px 25px 9px;
 }
-.head__logo-image {
+.head_logo-image {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -195,7 +189,7 @@ table {
           transform: scale(0.95);
 }
 .head__auth-button-btnUp {
-  width: 69px;
+  width: 85px;
   height: 34px;
   background-color: #1b1f23;
   border: 1px solid white;
