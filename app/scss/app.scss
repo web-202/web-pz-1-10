@@ -1,14 +1,147 @@
+$font-style: Pixelify Sans;
+$header-font-size: 18px;
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+//div, p, h1, h2, h3, a, span,
+//ul, ol, li, input,
+//button, header, main, footer, section, nav, body {
+//  font-family: Pixelify Sans;
+//}
+
+
 .img {
   width: 3vw;
 
 }
 
 
- //BLOCKS
+//BLOCKS
+.header {
+  display: flex;
+  font-family: $font-style;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  font-size: $header-font-size;
+}
+
+.logo {
+  width: 4rem;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.controlbar {
+  margin-right: 3rem;
+}
 
 
- //ELEMENTS
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  font-family: $font-style;
+  background-image: url('../img/background.jpg');
+  background-size: cover;
 
+}
 
- //MODIFIER
+.content {
+  display: flex;
+  background: #000000;
+  box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.75);
+  margin-left: 5%;
+  max-width: 1240px;
+  color: white;
+}
 
+.form {
+  width: 100%;
+  background: white;
+  color: black;
+  padding: 30px;
+}
+
+.label {
+  margin: 10px 0 10px 0;
+}
+
+//ELEMENTS
+.header__reference {
+  text-decoration: none;
+  color: white;
+  margin-left: 1rem;
+}
+
+.header__input {
+  font-family: $font-style;
+  height: 30px;
+  font-size: $header-font-size;
+  padding-left: 10px;
+}
+
+.content__text {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  justify-content: center;
+}
+
+.content__title {
+  font-size: 100px;
+}
+
+.content__filling {
+  font-size: 20px;
+  line-height: 28px;
+  color: #afafaf;
+}
+
+.label__inputName {
+  margin: 0 0 10px 0;
+}
+
+.label__input {
+  width: 95%;
+  height: 40px;
+  border: black solid 2px;
+  padding-left: 5%;
+  font-family: $font-style;
+  font-size: 20px;
+}
+
+.form__button {
+  font-family: $font-style;
+  font-size: 20px;
+  width: 100%;
+  height: 60px;
+  background: black;
+  color: white;
+  border: none;
+  margin: 10px 0 10px 0;
+}
+
+.label__passwordDescription {
+  margin: 10px 0 0 0;
+}
+
+//MODIFIER
+
+.header__reference-whiteborder {
+  border: 2px solid white;
+}
+
+.header__reference-pdhowbtn {
+  padding: 3px 10px 3px 10px;
+}

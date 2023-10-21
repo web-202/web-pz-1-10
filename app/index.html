@@ -5,47 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
   <title>PZ_1_10</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Pixelify Sans' rel='stylesheet'>
 </head>
 <body>
 <header class="header">
-  <img class="header__logo" src="./img/logo_github_icon_143196.png" alt="">
-  <nav class="header__navigation">
-    <a href="header__reference"></a>
-    <a href="header__reference"></a>
-    <a href="header__reference"></a>
-    <a href="header__reference"></a>
-    <a href="header__reference"></a>
-    <a href="header__reference"></a>
-  </nav>
-  <div>
+  <div class="navigation ">
+    <img class="logo" src="./img/logo_github_icon_143196.png" alt="">
+    <nav class="navigation__links-hidden" >
+      <a href="#" class="header__reference">Why GitHub?</a>
+      <a href="#" class="header__reference">Team</a>
+      <a href="#" class="header__reference">Enterprise</a>
+      <a href="#" class="header__reference">Explore</a>
+      <a href="#" class="header__reference">Marketplace</a>
+      <a href="#" class="header__reference">Pricing</a>
+    </nav>
+  </div>
+  <div class="controlbar">
     <label>
-      <input class="header__input" type="text">
+      <input placeholder="Search GitHub" class="header__input header__input-hidden" type="text">
     </label>
-    <a class="header__reference" href=""></a>
-    <a class="header__reference" href=""></a>
+    <a class="header__reference" href="#">Sign in</a>
+    <a class="header__reference header__reference-whiteborder header__reference-pdhowbtn" href="#">Sign up</a>
   </div>
 </header>
 <div class="body">
-  <div class="body__text"></div>
-  <form class="body__form" action="">
-    <div>
-      <p class="body__inputName"></p>
-      <input class="body__input" type="text" placeholder="">
+  <div class="content ">
+    <div class="content__text content__text-hidden">
+      <p class="content__title">Build for developers</p>
+      <p class="content__filling">
+        Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit</a> . Aliquam, ea esse et exercitationem
+        explicabo illo impedit ipsum itaque non odit perspiciatis recusandae repudiandae sit sunt, ut veritatis vitae.
+        Fuga, nostrum?
+      </p>
     </div>
-    <div>
-      <p class="body__inputName"></p>
-      <input class="body__input" type="text" placeholder="">
-    </div>
-    <div>
-      <p class="body__inputName"></p>
-      <input class="body__input" type="text" placeholder="">
-      <p class="body__passwordDescription"></p>
-    </div>
-    <div>
-      <button class="body__button"></button>
-      <p class="body__formFooter"></p>
-    </div>
-  </form>
+    <form class="form" action="">
+      <div class="label">
+        <p class="label__inputName">Username</p>
+        <input class="label__input" type="text" placeholder="">
+      </div>
+      <div class="label">
+        <p class="label__inputName">Email</p>
+        <input class="label__input" type="text" placeholder="">
+      </div>
+      <div class="label">
+        <p class="label__inputName">Password</p>
+        <input class="label__input" type="text" placeholder="">
+        <p class="label__passwordDescription">Make sure it's at least 15 characters OR at least 8 characters including a
+          number and a lowercase letter.
+          <a href="#">Learn more</a>.</p>
+      </div>
+      <div>
+        <button class="form__button">Sign up for GitHub</button>
+        <p class="form__formFooter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur
+          askhsfhj before add more least me getting more for me</p>
+      </div>
+    </form>
+  </div>
 </div>
 
 
