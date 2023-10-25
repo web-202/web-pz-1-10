@@ -1,98 +1,44 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const browserSync = require('browser-sync');
-const concat = require('gulp-concat');
-const uglify = require('gulp-uglifyjs');
-const cssnano = require('gulp-cssnano');
-const rename = require('gulp-rename');
-const del = require('del');
-const imagemin = require('gulp-imagemin');
-const pngquant = require('imagemin-pngquant');
-const cache = require('gulp-cache');
-const autoprefixer = require('gulp-autoprefixer');
+const gulp = require('gulp')
+const sass = require('gulp-sass')(require('sass'))
+const autoprefixer = require('gulp-autoprefixer')
+const cleanCSS = require('gulp-clean-css')
+const rename = require('gulp-rename')
+const sourcemaps = require('gulp-sourcemaps')
+const worker_threads = require("worker_threads");
+const concat = require('gulp-concat')
+const mincss = require('gulp-cssmin')
+const fs = require('fs');
+const path = require('path');
 
-gulp.task('sass', function () {
-  return gulp.src('app/scss/app.scss')
-    .pipe(sass())
-    .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
-    .pipe(gulp.dest('app/css'))
-    .pipe(browserSync.reload({stream: true}))
-});
+function generateScssFilePaths(directory) {
+  let scssFiles = fs.readdirSync(directory).filter((file) => file.endsWith('.scss')).map((file) => path.join(directory, file)).join(' ');
+  let directories = fs.readdirSync(directory).filter((file) => !file.endsWith('.scss'))
+  for (const dir of directories) {
+    scssFiles += ' ' + generateScssFilePaths(path.join(directory, dir))
+  }
+  return scssFiles;
+}
 
-gulp.task('browser-sync', function () {
-  browserSync({
-    server: {
-      baseDir: 'app'
-    },
-    notify: false
-  });
-});
+function toSass() {
+  let arr = generateScssFilePaths('app/scss').split(' ')
+  let temp = arr.shift()
+  arr.push(temp)
+  console.log(arr)
+  return gulp.src(arr.filter((file) => file.endsWith('.scss')))
+    .pipe(sourcemaps.init())
+    .pipe(concat('all.css'))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(cleanCSS())
+    .pipe(mincss())
+    .pipe(rename('main.css'))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('app/css/'))
+}
 
-gulp.task('js-dev', function () {
-  return gulp.src([
-    'app/libs/somelibs.js'
-  ])
-    .pipe(concat('bundle.js'))
-    .pipe(gulp.dest('app/js'));
-});
-
-gulp.task('js-prod', function () {
-  return gulp.src([
-    'app/libs/somelibs.js'
-  ])
-    .pipe(concat('bundle.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('app/js'));
-});
-
-gulp.task('code', function () {
-  return gulp.src('app/*.html')
-    .pipe(browserSync.reload({stream: true}))
-});
+function watch() {
+  gulp.watch(['app/scss/**/*.scss', 'app/scss/*.scss'], toSass)
+}
 
 
-gulp.task('clean', async function () {
-  return del.sync('build');
-});
-
-gulp.task('img', function () {
-  return gulp.src('app/img/**/*')
-    .pipe(cache(imagemin({
-      interlaced: true,
-      progressive: true,
-      svgoPlugins: [{removeViewBox: false}],
-      use: [pngquant()]
-    }))/**/)
-    .pipe(gulp.dest('dist/img'));
-});
-
-gulp.task('copy', async function () {
-
-  gulp.src([
-    'app/css/app.css'
-  ])
-    .pipe(gulp.dest('dist/css'))
-
-  gulp.src('app/fonts/**/*')
-    .pipe(gulp.dest('dist/fonts'))
-
-  gulp.src('app/js/**/*')
-    .pipe(gulp.dest('dist/js'))
-
-  gulp.src('app/*.html')
-    .pipe(gulp.dest('dist'));
-
-});
-
-gulp.task('clear', function (callback) {
-  return cache.clearAll();
-})
-
-gulp.task('watch', function () {
-  gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'));
-  gulp.watch('app/*.html', gulp.parallel('code'));
-  gulp.watch(['app/js/index.js', 'app/libs/**/*.js'], gulp.parallel('js-dev'));
-});
-
-gulp.task('default', gulp.parallel('sass', 'js-dev', 'browser-sync', 'watch'));
-gulp.task('build', gulp.series('clean', 'img', 'sass', 'js-prod', 'copy'));
+gulp.task('default', gulp.series(toSass, watch))
