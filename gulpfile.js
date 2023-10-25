@@ -7,9 +7,24 @@ const sourcemaps = require('gulp-sourcemaps')
 const worker_threads = require("worker_threads");
 const concat = require('gulp-concat')
 const mincss = require('gulp-cssmin')
+const fs = require('fs');
+const path = require('path');
+
+function generateScssFilePaths(directory) {
+  let scssFiles = fs.readdirSync(directory).filter((file) => file.endsWith('.scss')).map((file) => path.join(directory, file)).join(' ');
+  let directories = fs.readdirSync(directory).filter((file) => !file.endsWith('.scss'))
+  for (const dir of directories) {
+    scssFiles += ' ' + generateScssFilePaths(path.join(directory, dir))
+  }
+  return scssFiles;
+}
 
 function toSass() {
-  return gulp.src('app/scss/*.scss')
+  let arr = generateScssFilePaths('app/scss').split(' ')
+  let temp = arr.shift()
+  arr.push(temp)
+  console.log(arr)
+  return gulp.src(arr.filter((file) => file.endsWith('.scss')))
     .pipe(sourcemaps.init())
     .pipe(concat('all.css'))
     .pipe(sass().on('error', sass.logError))
@@ -22,7 +37,7 @@ function toSass() {
 }
 
 function watch() {
-  gulp.watch('app/scss/*.scss', toSass)
+  gulp.watch(['app/scss/**/*.scss', 'app/scss/*.scss'], toSass)
 }
 
 

@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  font-family: $font-style;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  font-size: $header-font-size;
+}
