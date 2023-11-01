@@ -1,14 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+  <meta name="viewport" content="width=1400" />
   <title>PZ_1_10</title>
-  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="./css/app.css">
 </head>
-<body>
 
-<script src="js/bundle.js"></script>
+<body>
+  <header class="head">
+    <div class="head_logo">
+      <img class="head_logo-image" src="./img/github.svg" alt="GitHub Logo">
+    </div>
+
+    <nav class="head__links">
+
+      <ul class="head__links-ul">
+        <li class="head__links-li"><a href="#">Чому GitHub?<span class="head__links-naprav">&#709;</span></a></li>
+        <li class="head__links-li"><a href="#">Команда</a></li>
+        <li class="head__links-li"><a href="#">Підприємство</a></li>
+        <li class="head__links-li"><a href="#">Дослідити<span class="head__links-naprav">&#709;</span></a></li>
+        <li class="head__links-li"><a href="#">Магазин</a></li>
+        <li class="head__links-li"><a href="#">Ціни<span class="head__links-naprav">&#709;</span></a></li>
+      </ul>
+
+    </nav>
+
+    <div class="head__auth-button">
+      <div class="head__auth-button-buttons">
+      <input class="head__auth-button-input" type="text" placeholder="Шукати на Github">
+      
+        <button class="head__auth-button-btnIn">Вхід</button>
+        <button class="head__auth-button-btnUp">Реєстрація</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="content__left">
+      <h1 class="content__left-title">Створено для розробників</h1>
+      <p class="content__left-title__under">GitHub — це платформа для розробки, створена за вашим способом роботи. Від <a
+          class="content__left-title__under-link" href="#">відкритого коду</a> до <a class="content__left-title__under-link"
+          href="#">бізнесу</a>, ви можете розміщувати та переглядати код, керувати проектами та створювати програмне забезпечення разом із 50 мільйонами розробників.</p>
+    </div>
+
+    <div class="content__right">
+      <form class="auth-form">
+        <div class="auth-form__field">
+          <label for="username" class="auth-form__label">Логін</label>
+          <input type="text" id="username" class="auth-form__input" name="username">
+        </div>
+
+        <div class="auth-form__field">
+          <label for="email" class="auth-form__label">Пошта</label>
+          <input type="email" id="email" class="auth-form__input" name="email">
+        </div>
+
+        <div class="auth-form__field">
+          <label for="password" class="auth-form__label">Пароль</label>
+          <input type="password" id="password" class="auth-form__input" name="password">
+        </div>
+
+        <div class="auth-form__first-text">
+          <p class="auth-form__first-text__p">Переконайтеся, що він містить принаймні 15 символів АБО принаймні 8 символів, включаючи
+            число і малу літера. <a href="#">Дізнатись більше.</a></p>
+        </div>
+
+        <button class="auth-form__button">Зареєструватись на GitHub</button>
+
+        <div class="auth-form__second-text">
+          <p class="auth-form__second-text__p">Натиснувши «Зареєструватися на GitHub», ви погоджуєтеся з нашими <a href="#">Політика конфіденційності</a> та
+            <a href="#">Налаштування приватності</a>. Час від часу надсилатимемо
+            електронні листи, пов’язані з обліковим записом.
+          </p>
+        </div>
+      </form>
+    </div>
+  </main>
 
 </body>
+
 </html>
