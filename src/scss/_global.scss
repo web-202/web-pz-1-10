@@ -1,0 +1,83 @@
+// Container
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $containerSidePadding + px;
+
+    @media (max-width: $breakpoint1450) {
+        max-width: 1200px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 740px;
+        .menu{
+            &__input{
+                padding: 5px;
+                
+            }
+            &__btn{
+                margin: 0px 5px;
+                font-size: 13px;
+            }
+        }
+        .section{
+            
+            display: block;
+            &__body{
+                width: 100%;
+                h1{
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+            &__register{
+                width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+        .menu{
+            &__input{
+                display: none;
+            }
+            &__btn{
+                font-size: 10px;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// Body Locked
+body {
+    background:rgb(78, 80, 81);
+    &.locked {
+        overflow: hidden;
+    }
+    
+    li ,input {
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
