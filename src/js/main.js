@@ -41,3 +41,29 @@ function burgerMenu() {
   }
   window.addEventListener('scroll', fixedNav)
   
+
+  function performSearch() {
+    const searchInput = document.querySelector('.search-input');
+    const searchResults = document.querySelector('.search-results');
+    const query = searchInput.value.toLowerCase();
+  
+    // Здесь вы можете выполнить поиск в данных страницы или загрузить данные с сервера
+    // и отобразить результаты в элементе .search-results
+  
+    // Пример: создадим список элементов, соответствующих запросу
+    const results = ['Result 1', 'Result 2', 'Result 3'];
+  
+    // Очищаем текущие результаты
+    searchResults.innerHTML = '';
+  
+    // Отображаем результаты
+    results.forEach((result) => {
+      const listItem = document.createElement('li');
+      listItem.textContent = result;
+      searchResults.appendChild(listItem);
+    });
+  
+    // Отображаем результаты поиска
+    searchResults.style.display = results.length > 0 ? 'block' : 'none';
+  }
+  
